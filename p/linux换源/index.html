@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='换源   打开kali的终端
+1
+  编辑软件源，输入
+sudo vi /etc/apt/sources.list 2
+  如果是非root的普通账户，会提示需要输入登录密码（2020版本后的默认用户kali也是普通用户），输入密码后回车进入软件源页面
+3
+  点击键入 i 进入编辑模式（此时窗口左下角会显示INSERT或插入），注释掉官方源
+4
+  添加国内源
+阿里云：
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb http://mirrors.aliyun.com/kali-security kali-rolling/updates main contrib non-free 中科大：
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib 5
+  按Esc退出编辑模式，然后输入:wq（保存并退出），回车'><title>linux换源</title>
+
+<link rel='canonical' href='https://example.com/p/linux%E6%8D%A2%E6%BA%90/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='linux换源'>
+<meta property='og:description' content='换源   打开kali的终端
+1
+  编辑软件源，输入
+sudo vi /etc/apt/sources.list 2
+  如果是非root的普通账户，会提示需要输入登录密码（2020版本后的默认用户kali也是普通用户），输入密码后回车进入软件源页面
+3
+  点击键入 i 进入编辑模式（此时窗口左下角会显示INSERT或插入），注释掉官方源
+4
+  添加国内源
+阿里云：
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb http://mirrors.aliyun.com/kali-security kali-rolling/updates main contrib non-free 中科大：
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib 5
+  按Esc退出编辑模式，然后输入:wq（保存并退出），回车'>
+<meta property='og:url' content='https://example.com/p/linux%E6%8D%A2%E6%BA%90/'>
+<meta property='og:site_name' content='小陈博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-04-24T22:38:06&#43;08:00'/><meta property='article:modified_time' content='2021-04-24T22:38:06&#43;08:00'/>
+<meta name="twitter:title" content="linux换源">
+<meta name="twitter:description" content="换源   打开kali的终端
+1
+  编辑软件源，输入
+sudo vi /etc/apt/sources.list 2
+  如果是非root的普通账户，会提示需要输入登录密码（2020版本后的默认用户kali也是普通用户），输入密码后回车进入软件源页面
+3
+  点击键入 i 进入编辑模式（此时窗口左下角会显示INSERT或插入），注释掉官方源
+4
+  添加国内源
+阿里云：
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb http://mirrors.aliyun.com/kali-security kali-rolling/updates main contrib non-free 中科大：
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib 5
+  按Esc退出编辑模式，然后输入:wq（保存并退出），回车">
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hud924697ec19105865ef9fdbaf31773f1_300068_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">小陈博客</a></h1>
+        <h2 class="site-description">没有什么能够阻挡我们前进的脚步！</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/p/linux%E6%8D%A2%E6%BA%90/">linux换源</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 24, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="换源">换源</h2>
+<ol>
+<li>
+<p>打开kali的终端</p>
+<p><figure style="flex-grow: 178; flex-basis: 427px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/1.png" data-size="1284x721"><img src="/p/linux%E6%8D%A2%E6%BA%90/1.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/1_hubb198f352f77049b131fe8ec540d1d10_134361_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/1_hubb198f352f77049b131fe8ec540d1d10_134361_1024x0_resize_box_2.png 1024w"
+				width="1284"
+				height="721"
+				loading="lazy"
+				alt="1">
+		</a>
+		
+		<figcaption>1</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>编辑软件源，输入</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo vi /etc/apt/sources.list
+</code></pre></div><p><figure style="flex-grow: 178; flex-basis: 428px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/2.png" data-size="1284x720"><img src="/p/linux%E6%8D%A2%E6%BA%90/2.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/2_hu2a7da4156475d1f283db6076449ebc96_140097_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/2_hu2a7da4156475d1f283db6076449ebc96_140097_1024x0_resize_box_2.png 1024w"
+				width="1284"
+				height="720"
+				loading="lazy"
+				alt="2">
+		</a>
+		
+		<figcaption>2</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>如果是非root的普通账户，会提示需要输入登录密码（2020版本后的默认用户kali也是普通用户），输入密码后回车进入软件源页面</p>
+<p><figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/3.png" data-size="1282x721"><img src="/p/linux%E6%8D%A2%E6%BA%90/3.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/3_hu8f3fa1ec4f568e20e965b1945b6bcaeb_157651_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/3_hu8f3fa1ec4f568e20e965b1945b6bcaeb_157651_1024x0_resize_box_2.png 1024w"
+				width="1282"
+				height="721"
+				loading="lazy"
+				alt="3">
+		</a>
+		
+		<figcaption>3</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>点击键入 i 进入编辑模式（此时窗口左下角会显示INSERT或插入），注释掉官方源</p>
+<p><figure style="flex-grow: 178; flex-basis: 428px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/4.png" data-size="1281x718"><img src="/p/linux%E6%8D%A2%E6%BA%90/4.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/4_hu6769ec30eff49a38c592225bdcb0b62f_155831_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/4_hu6769ec30eff49a38c592225bdcb0b62f_155831_1024x0_resize_box_2.png 1024w"
+				width="1281"
+				height="718"
+				loading="lazy"
+				alt="4">
+		</a>
+		
+		<figcaption>4</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>添加国内源</p>
+<p>阿里云：</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd">deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib
+deb http://mirrors.aliyun.com/kali-security kali-rolling/updates main contrib non-free
+</code></pre></div><p>中科大：</p>
+<div class="highlight"><pre class="chroma"><code class="language-cmd" data-lang="cmd">deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib  
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+</code></pre></div><p><figure style="flex-grow: 177; flex-basis: 425px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/5.png" data-size="1282x723"><img src="/p/linux%E6%8D%A2%E6%BA%90/5.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/5_hu1d7ca140cd6ecc6b49b344cb5c897882_173921_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/5_hu1d7ca140cd6ecc6b49b344cb5c897882_173921_1024x0_resize_box_2.png 1024w"
+				width="1282"
+				height="723"
+				loading="lazy"
+				alt="5">
+		</a>
+		
+		<figcaption>5</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>按Esc退出编辑模式，然后输入:wq（保存并退出），回车</p>
+<p><figure style="flex-grow: 178; flex-basis: 427px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/6.png" data-size="1282x720"><img src="/p/linux%E6%8D%A2%E6%BA%90/6.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/6_huf5e136c728a7a9375a9d988906e3fb9b_171372_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/6_huf5e136c728a7a9375a9d988906e3fb9b_171372_1024x0_resize_box_2.png 1024w"
+				width="1282"
+				height="720"
+				loading="lazy"
+				alt="6">
+		</a>
+		
+		<figcaption>6</figcaption>
+		
+	</figure></p>
+</li>
+</ol>
+<p>至此，换源操作已完成</p>
+<h2 id="更新软件和软件源">更新软件和软件源</h2>
+<ol>
+<li>
+<p>输入sudo apt-get dist-upgrade进行软件源清单更新，输入密码后回车</p>
+<p><figure style="flex-grow: 176; flex-basis: 424px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/7.png" data-size="1281x724"><img src="/p/linux%E6%8D%A2%E6%BA%90/7.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/7_hub8a3806072995ba76d006e6d2fb7f2ad_175726_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/7_hub8a3806072995ba76d006e6d2fb7f2ad_175726_1024x0_resize_box_2.png 1024w"
+				width="1281"
+				height="724"
+				loading="lazy"
+				alt="7">
+		</a>
+		
+		<figcaption>7</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>输入sudo apt-get update，进行软件版本更新</p>
+<p><figure style="flex-grow: 177; flex-basis: 426px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/8.png" data-size="1283x722"><img src="/p/linux%E6%8D%A2%E6%BA%90/8.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/8_hu1515410d80e2c11afbd2cfb4dd3f6e74_212886_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/8_hu1515410d80e2c11afbd2cfb4dd3f6e74_212886_1024x0_resize_box_2.png 1024w"
+				width="1283"
+				height="722"
+				loading="lazy"
+				alt="8">
+		</a>
+		
+		<figcaption>8</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>更新完成后再输入sudo apt-get upgrade进行更新</p>
+<p><figure style="flex-grow: 177; flex-basis: 427px">
+		<a href="/p/linux%E6%8D%A2%E6%BA%90/9.png" data-size="1281x720"><img src="/p/linux%E6%8D%A2%E6%BA%90/9.png"
+				srcset="/p/linux%E6%8D%A2%E6%BA%90/9_hudfbf21a8b846666b2ae48a909d2de236_297552_480x0_resize_box_2.png 480w, /p/linux%E6%8D%A2%E6%BA%90/9_hudfbf21a8b846666b2ae48a909d2de236_297552_1024x0_resize_box_2.png 1024w"
+				width="1281"
+				height="720"
+				loading="lazy"
+				alt="9">
+		</a>
+		
+		<figcaption>9</figcaption>
+		
+	</figure></p>
+<p>此时输入y回车即可</p>
+</li>
+</ol>
+<p>第一次更新时间比较长，耐心等待更新完成，就可以开始kali的渗透之旅了</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 小陈博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
