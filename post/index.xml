@@ -71,7 +71,7 @@ cd myblog git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 注�
  如果cd到项目根目录，clone的地址后面需加上路径 “themes/主题名” 如果cd到themes目录，直接git clone 地址    新建一个博客
 hugo new post/blog.md 注：
  在post目录下新建一个名为blog.md的博客文件 .md为Markdown格式的文件    修改配置文件
-baseURL = &amp;quot;https://tian_828.gitee.io/&amp;quot; languageCode = &amp;quot;zh-cn&amp;quot; title = &amp;quot;靖哥的博客&amp;quot; theme = &amp;quot;m10c&amp;quot; 注：</description>
+baseURL = &amp;quot;https://tian_828.gitee.io/&amp;quot;languageCode = &amp;quot;zh-cn&amp;quot;title = &amp;quot;靖哥的博客&amp;quot;theme = &amp;quot;m10c&amp;quot;注：</description>
     </item>
     
     <item>
