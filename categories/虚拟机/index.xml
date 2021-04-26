@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>虚拟机 on 萧尘博客</title>
+    <link>https://cjj-ck.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on 萧尘博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Apr 2021 22:58:38 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>桥接模式</title>
+      <link>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 25 Apr 2021 22:58:38 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
+      <description>虚拟机桥接模式 桥接模式就是将主机网卡与虚拟机的网卡利用虚拟网桥进行通信。
+在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。
+在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致
+桥接模式配置 查看需要桥接的网卡   右击右下角网络图标点击打开网络和Internet设置1
+  下滑找到查看网络属性2
+  找到正在使用的网卡
+比如我现在正在使用无线网络，到这里找到有关于此网络的信息，包括我们现在要找的无线网卡名称
+3
+  设置桥接网卡 打开vmware，点击编辑、虚拟网络编辑器，将桥接的网卡设置成刚刚查看到的网卡
+4
+注：若系统账户不是Administrator，会提示权限不够，打开VMware时右击以管理员身份运行就可以了
+虚拟机内部网IP配置 以Ubuntu20.04为例
+ 点击右上角的网络图标、有线、有线设置  
+ 在有线一栏点击齿轮、IPV4
+
+  开始配置IP
+ IPV4方式：手动 地址：  地址：设置成与宿主机同一网段下的其他IP地址 子网掩码：与宿主机保持一致 网关：与宿主机保持一致   DNS：与宿主机保持一致 路由：自动就好    校园网的桥接问题 如果宿主机连接的是类似校园网这种需要认证的网络时，会有如下问题：
+  设置虚拟机内的IP地址时，除了宿主机的IP地址，其他的地址均无法上网
+  如果虚拟机设置成宿主机一样的IP，会导致宿主机无法正常连接网络
+  造成这种现象的原因是：虚拟机桥接网络时，这个虚拟机就相当于连接校园网的另一台主机，这台主机也需要像宿主机一样通过认证才允许连接网络</description>
+    </item>
+    
+  </channel>
+</rss>

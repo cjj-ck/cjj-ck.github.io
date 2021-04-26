@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='git版本控制工具的使用'><title>git操作</title>
+
+<link rel='canonical' href='https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='git操作'>
+<meta property='og:description' content='git版本控制工具的使用'>
+<meta property='og:url' content='https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/'>
+<meta property='og:site_name' content='萧尘博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-04-26T21:28:38&#43;08:00'/><meta property='article:modified_time' content='2021-04-26T21:28:38&#43;08:00'/><meta property='og:image' content='https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/index.png' />
+<meta name="twitter:title" content="git操作">
+<meta name="twitter:description" content="git版本控制工具的使用"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/index.png' />
+    <link rel="shortcut icon" href="img/avatar.png" />
+
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hud924697ec19105865ef9fdbaf31773f1_300068_300x0_resize_box_2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://cjj-ck.github.io/">萧尘博客</a></h1>
+        <h2 class="site-description">不要在乎别人的看法，努力做好自己觉得对的事！</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://cjj-ck.github.io/" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/git%E6%93%8D%E4%BD%9C/">
+                <img src="/p/git%E6%93%8D%E4%BD%9C/index_hu15178abcc99e7f0d39fea70d947db705_25539_800x0_resize_box_2.png"
+                        srcset="/p/git%E6%93%8D%E4%BD%9C/index_hu15178abcc99e7f0d39fea70d947db705_25539_800x0_resize_box_2.png 800w, /p/git%E6%93%8D%E4%BD%9C/index_hu15178abcc99e7f0d39fea70d947db705_25539_1600x0_resize_box_2.png 1600w"
+                        width="800" 
+                        height="481" 
+                        loading="lazy"
+                        alt="Featured image of post git操作" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%BC%96%E7%A8%8B%E6%8A%80%E8%83%BD/" >
+                编程技能
+            </a>
+        
+            <a href="/categories/linux/" >
+                Linux
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/git%E6%93%8D%E4%BD%9C/">git操作</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        git版本控制工具的使用
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 26, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <ol>
+<li>
+<p>本地安装git</p>
+<p>去<a class="link" href="https://git-scm.com/"  target="_blank" rel="noopener"
+    >git官网</a>下载git软件，安装过程无脑下一步就行</p>
+<p>安装成功后在鼠标右击目录下会多出两项</p>
+<p><figure style="flex-grow: 65; flex-basis: 157px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/1.png" data-size="268x408"><img src="/p/git%E6%93%8D%E4%BD%9C/1.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/1_hu9b03d72d3bc8b4d08c7d26c6d491b604_17631_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/1_hu9b03d72d3bc8b4d08c7d26c6d491b604_17631_1024x0_resize_box_2.png 1024w"
+				width="268"
+				height="408"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p><strong>Git GUI</strong>：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令</p>
+<p>**Git Bash：**Unix与Linux风格的命令行，使用最多，推荐最多</p>
+</li>
+<li>
+<p>设置用户名和邮箱</p>
+<p>你需要告诉本地git软件，你是一个有用户名、有邮箱的合法用户，若不设置，commit时会阻止提交到本地仓库</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git config --global user.name <span class="s2">&#34;用户&#34;</span>
+git config --global user.email 邮箱
+</code></pre></div></li>
+<li>
+<p>搭建仓库</p>
+<p><strong>有两种方式：</strong></p>
+<ul>
+<li>
+<p>搭建本地仓库</p>
+<p>新建一个文件夹，作为本地仓库，即工作目录，右击选择==Git Bash Here==，执行初始化命令</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git init
+</code></pre></div></li>
+<li>
+<p>克隆远程仓库</p>
+<p>将远程服务器上的仓库完全镜像一份至本地</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git clone <span class="o">[</span>url<span class="o">]</span>
+</code></pre></div></li>
+</ul>
+</li>
+<li>
+<p>使用码云</p>
+<p><strong>生成公钥</strong></p>
+<ul>
+<li>进入用户文件夹，比如  C:\Users\Administrator，找到.ssh文件夹</li>
+<li>进入.ssh文件夹，文件夹内右击选择Git Bash Here</li>
+<li>执行 ssh-keygen 生成公钥，此时文件夹内会生成两个文件id_rsa和id_rsa.pub</li>
+</ul>
+<p><strong>设置公钥</strong></p>
+<ul>
+<li>打开设置</li>
+</ul>
+<p><figure style="flex-grow: 130; flex-basis: 313px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/2.png" data-size="526x403"><img src="/p/git%E6%93%8D%E4%BD%9C/2.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/2_hu9e8316138cb8305ff14015d650afc322_18196_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/2_hu9e8316138cb8305ff14015d650afc322_18196_1024x0_resize_box_2.png 1024w"
+				width="526"
+				height="403"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<ul>
+<li>
+<p>进入SSH公钥选项</p>
+<p><figure style="flex-grow: 40; flex-basis: 96px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/3.png" data-size="323x802"><img src="/p/git%E6%93%8D%E4%BD%9C/3.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/3_hubcc8aee5da055be9c9db253177c13e3f_18546_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/3_hubcc8aee5da055be9c9db253177c13e3f_18546_1024x0_resize_box_2.png 1024w"
+				width="323"
+				height="802"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>将刚刚生成的id_rsa.pub文件里的公钥复制到这里</p>
+<p><figure style="flex-grow: 341; flex-basis: 820px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/4.png" data-size="1135x332"><img src="/p/git%E6%93%8D%E4%BD%9C/4.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/4_hu7d445cfef4a42488a6cc0aaa0c2af875_11766_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/4_hu7d445cfef4a42488a6cc0aaa0c2af875_11766_1024x0_resize_box_2.png 1024w"
+				width="1135"
+				height="332"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+</ul>
+</li>
+<li>
+<p>关联远程仓库</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git remote add gitee https://gitee.com/code_from_cjj/pycode.git
+</code></pre></div><p>命令解析</p>
+<p>remote add: 添加远程仓库</p>
+<p>gitee ：给远程仓库起个名称叫gitee</p>
+<p><a href="https://gitee.com/code_from_cjj/pycode.git">https://gitee.com/code_from_cjj/pycode.git</a>：远程仓库的地址</p>
+</li>
+<li>
+<p>后续操作</p>
+<p>以上操作完成后，在此工作目录下的改动都可以提交到本地或者远程的仓库中了</p>
+<ul>
+<li>
+<p>添加到暂存区</p>
+<p><figure style="flex-grow: 152; flex-basis: 367px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/5.png" data-size="760x497"><img src="/p/git%E6%93%8D%E4%BD%9C/5.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/5_huf2a52a7ca0d6af9dff29b77186df041d_33589_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/5_huf2a52a7ca0d6af9dff29b77186df041d_33589_1024x0_resize_box_2.png 1024w"
+				width="760"
+				height="497"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>提交到本地仓库</p>
+<p><figure style="flex-grow: 165; flex-basis: 398px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/6.png" data-size="745x449"><img src="/p/git%E6%93%8D%E4%BD%9C/6.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/6_huaa0b94d2d3082366c78c171c8cfe9df2_28558_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/6_huaa0b94d2d3082366c78c171c8cfe9df2_28558_1024x0_resize_box_2.png 1024w"
+				width="745"
+				height="449"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>提交到远程仓库</p>
+<p><figure style="flex-grow: 165; flex-basis: 398px">
+		<a href="/p/git%E6%93%8D%E4%BD%9C/7.png" data-size="745x449"><img src="/p/git%E6%93%8D%E4%BD%9C/7.png"
+				srcset="/p/git%E6%93%8D%E4%BD%9C/7_hufeadee26a12cf7823b67926acd95c963_39205_480x0_resize_box_2.png 480w, /p/git%E6%93%8D%E4%BD%9C/7_hufeadee26a12cf7823b67926acd95c963_39205_1024x0_resize_box_2.png 1024w"
+				width="745"
+				height="449"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+</ul>
+</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/hydra%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3/">
+        
+        
+            <div class="article-image">
+                <img src="/p/hydra%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3/image.fffacb82c265bb1b9e2d6e1a18ffec33_hu4cb1fc5fb76100460d8f8e366c4171c3_137941_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-//rLgsJluxueLW4aGP/sMw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">hydra暴力破解</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/linux%E6%8D%A2%E6%BA%90/">
+        
+        
+            <div class="article-image">
+                <img src="/p/linux%E6%8D%A2%E6%BA%90/index.4ea4c2230ed9dd6385403d601b7e4e7c_hu43e51c4064de8073a7912df9d256b142_21327_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-TqTCIw7Z3WOFQD1gG35OfA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">linux换源</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/p/hugo/">
+        
+        
+            <div class="article-image">
+                <img src="/p/hugo/hugo.36d40f56bb29c8f1604e6c485445183c_hue75e5db0bb1bfcf964e064a839d1440c_35355_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-NtQPVrspyPFgTmxIVEUYPA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 萧尘博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
