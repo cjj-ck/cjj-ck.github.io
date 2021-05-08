@@ -6,7 +6,101 @@
     <description>Recent content in Posts on 萧尘博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://cjj-ck.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Apr 2021 21:28:38 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git操作</title>
+      <link>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Mon, 26 Apr 2021 21:28:38 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</guid>
+      <description>本地安装git
+去git官网下载git软件，安装过程无脑下一步就行
+安装成功后在鼠标右击目录下会多出两项
+
+Git GUI：图形界面的Git，不建议初学者使用，尽量先熟悉常用命令
+Git Bash：Unix与Linux风格的命令行，使用最多，推荐最多
+  设置用户名和邮箱
+你需要告诉本地git软件，你是一个有用户名、有邮箱的合法用户，若不设置，commit时会阻止提交到本地仓库
+git config --global user.name &amp;#34;用户&amp;#34; git config --global user.email 邮箱   搭建仓库
+有两种方式：
+  搭建本地仓库
+新建一个文件夹，作为本地仓库，即工作目录，右击选择==Git Bash Here==，执行初始化命令
+git init   克隆远程仓库
+将远程服务器上的仓库完全镜像一份至本地
+git clone [url]     使用码云
+生成公钥
+ 进入用户文件夹，比如 C:\Users\Administrator，找到.ssh文件夹 进入.ssh文件夹，文件夹内右击选择Git Bash Here 执行 ssh-keygen 生成公钥，此时文件夹内会生成两个文件id_rsa和id_rsa.pub  设置公钥
+ 打开设置  
+  进入SSH公钥选项</description>
+    </item>
+    
+    <item>
+      <title>桥接模式</title>
+      <link>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
+      <pubDate>Sun, 25 Apr 2021 22:58:38 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
+      <description>虚拟机桥接模式 桥接模式就是将主机网卡与虚拟机的网卡利用虚拟网桥进行通信。
+在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。
+在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致
+桥接模式配置 查看需要桥接的网卡   右击右下角网络图标点击打开网络和Internet设置1
+  下滑找到查看网络属性2
+  找到正在使用的网卡
+比如我现在正在使用无线网络，到这里找到有关于此网络的信息，包括我们现在要找的无线网卡名称
+3
+  设置桥接网卡 打开vmware，点击编辑、虚拟网络编辑器，将桥接的网卡设置成刚刚查看到的网卡
+4
+注：若系统账户不是Administrator，会提示权限不够，打开VMware时右击以管理员身份运行就可以了
+虚拟机内部网IP配置 以Ubuntu20.04为例
+ 点击右上角的网络图标、有线、有线设置  
+ 在有线一栏点击齿轮、IPV4
+
+  开始配置IP
+ IPV4方式：手动 地址：  地址：设置成与宿主机同一网段下的其他IP地址 子网掩码：与宿主机保持一致 网关：与宿主机保持一致   DNS：与宿主机保持一致 路由：自动就好    校园网的桥接问题 如果宿主机连接的是类似校园网这种需要认证的网络时，会有如下问题：
+  设置虚拟机内的IP地址时，除了宿主机的IP地址，其他的地址均无法上网
+  如果虚拟机设置成宿主机一样的IP，会导致宿主机无法正常连接网络
+  造成这种现象的原因是：虚拟机桥接网络时，这个虚拟机就相当于连接校园网的另一台主机，这台主机也需要像宿主机一样通过认证才允许连接网络</description>
+    </item>
+    
+    <item>
+      <title>linux换源</title>
+      <link>https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/</link>
+      <pubDate>Sat, 24 Apr 2021 22:38:06 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/</guid>
+      <description>换源   打开kali的终端
+1
+  编辑软件源，输入
+sudo vi /etc/apt/sources.list 2
+  如果是非root的普通账户，会提示需要输入登录密码（2020版本后的默认用户kali也是普通用户），输入密码后回车进入软件源页面
+3
+  点击键入 i 进入编辑模式（此时窗口左下角会显示INSERT或插入），注释掉官方源
+4
+  添加国内源
+阿里云：
+deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb http://mirrors.aliyun.com/kali-security kali-rolling/updates main contrib non-free 中科大：
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib 5
+  按Esc退出编辑模式，然后输入:wq（保存并退出），回车</description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://cjj-ck.github.io/p/hugo/</link>
+      <pubDate>Sat, 24 Apr 2021 21:05:28 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/hugo/</guid>
+      <description>环境部署   安装git
+sudo apt-get install git   安装hugo
+sudo apt-get install hugo   项目搭建   创建hugo 项目
+hugo new site myblog 注：
+ myblog为创建的hugo项目的根目录名称    克隆一个主题
+cd myblog git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 注：
+ 如果cd到项目根目录，clone的地址后面需加上路径 “themes/主题名” 如果cd到themes目录，直接git clone 地址    新建一个博客
+hugo new post/blog.md 注：
+ 在post目录下新建一个名为blog.md的博客文件 .md为Markdown格式的文件    修改配置文件
+baseURL = &amp;quot;https://tian_828.gitee.io/&amp;quot;languageCode = &amp;quot;zh-cn&amp;quot;title = &amp;quot;靖哥的博客&amp;quot;theme = &amp;quot;m10c&amp;quot;注：</description>
+    </item>
+    
     <item>
       <title>Chinese Test</title>
       <link>https://cjj-ck.github.io/p/test-chinese/</link>
