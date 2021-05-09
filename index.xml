@@ -6,7 +6,304 @@
         <description>Recent content on 萧尘博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 26 Apr 2021 21:28:38 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 09 May 2021 17:55:26 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Java开发环境配置</title>
+        <link>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sun, 09 May 2021 17:55:26 +0800</pubDate>
+        
+        <guid>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;安装jdk&#34;&gt;安装JDK&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载jdk安装包&lt;/p&gt;
+&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;jdk官方下载页面&lt;/a&gt;，选择合适的版本进行下载&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 665; flex-basis: 1596px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1404x211&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hue0602c2e77cbd86693d989c582e6f0c1_29333_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hue0602c2e77cbd86693d989c582e6f0c1_29333_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1404&#34;
+				height=&#34;211&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双击运行jdk安装包&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 134; flex-basis: 322px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1030x766&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu6eb665fca1b703d6b4b4af4fa158e880_206546_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu6eb665fca1b703d6b4b4af4fa158e880_206546_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;766&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击下一步后，选择安装路径&lt;/p&gt;
+&lt;p&gt;建议创建一个java目录将jdk和jre安装在内&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1030x774&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu3e1078cc3779f241e193a82f2c722f5f_283999_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu3e1078cc3779f241e193a82f2c722f5f_283999_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;774&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击下一步开始安装，安装过程会弹出jre的安装，开始进行下一步操作&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;安装jre&#34;&gt;安装JRE&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;选择合适的jre的安装路径&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34; data-size=&#34;1030x774&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hu87f4be413dc5805320049943cb1cc7bc_186763_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hu87f4be413dc5805320049943cb1cc7bc_186763_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;774&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击下一步进行安装，安装完成后点击关闭，就可以开始配置环境变量了&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1030x770&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hubdd8546c721f633c98650f252823587a_199396_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hubdd8546c721f633c98650f252823587a_199396_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;770&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;配置环境变量&#34;&gt;配置环境变量&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;右击此电脑，点击属性&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34; data-size=&#34;1030x773&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hu64ad21570e9e5c14e0c40552a1d1c3bc_434653_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hu64ad21570e9e5c14e0c40552a1d1c3bc_434653_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;773&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择高级系统设置，在弹出的窗口中点击环境变量&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34; data-size=&#34;1030x770&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hua15faccac33c046d3ba73e73f0847941_124403_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hua15faccac33c046d3ba73e73f0847941_124403_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;770&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;从用户变量和系统变量中任意选择一个位置进行环境变量的配置&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8.png&#34; data-size=&#34;1030x771&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8_huc5a328932a3fac42f0a44bfc6ebe1441_124647_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8_huc5a328932a3fac42f0a44bfc6ebe1441_124647_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;771&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;用户变量只在当前Windows用户下有效，若切换成其他用户（如administrator用户），此处的环境变量不生效。而系统变量则在所有用户下均有效。这里使用用户变量演示&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建一个JAVA_HOME变量，选择新建，变量值为jdk的安装路径&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9.png&#34; data-size=&#34;1030x769&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9_hu7f0ae1bf687b9bb04685a4876e98b6c8_125869_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9_hu7f0ae1bf687b9bb04685a4876e98b6c8_125869_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;769&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建CLASSPATH变量，变量值为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10.png&#34; data-size=&#34;1030x772&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10_hu69fc17b8b1bfdc1b173fc395a5598286_131693_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10_hu69fc17b8b1bfdc1b173fc395a5598286_131693_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;772&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找到Path，双击进行编辑，添加如下两个变量&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11.png&#34; data-size=&#34;1030x770&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11_hu253ced2e02a6d30bd4da95a7b35b77a9_119778_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11_hu253ced2e02a6d30bd4da95a7b35b77a9_119778_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1030&#34;
+				height=&#34;770&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果环境变量是单行的风格，则添加的环境变量为&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑好后一直点击确定以保存更改，现在检查环境变量是否成功配置&lt;/p&gt;
+&lt;p&gt;打开命令行，输入java后回车&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12.png&#34; data-size=&#34;1063x801&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12_hua496e838af2f47073f90d0ae979659d6_160985_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12_hua496e838af2f47073f90d0ae979659d6_160985_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1063&#34;
+				height=&#34;801&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;再输入javac后回车&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13.png&#34; data-size=&#34;1061x799&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13_hu4e5051af7c515c3be1e7afb70480cb4c_225226_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13_hu4e5051af7c515c3be1e7afb70480cb4c_225226_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1061&#34;
+				height=&#34;799&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;至此，java开发环境配置完毕&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Python开发环境配置</title>
+        <link>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sun, 09 May 2021 17:55:19 +0800</pubDate>
+        
+        <guid>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>C语言开发环境配置</title>
+        <link>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+        <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
+        
+        <guid>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>VMware Tools的安装</title>
+        <link>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+        <pubDate>Sun, 09 May 2021 17:39:00 +0800</pubDate>
+        
+        <guid>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/img.png" alt="Featured image of post VMware Tools的安装" /&gt;&lt;h1 id=&#34;vmware-tools的安装&#34;&gt;VMware Tools的安装&lt;/h1&gt;
+&lt;p&gt;VMware Tools是VMware虚拟机的增强功能，在VMware的虚拟机内安装VMware tools能够大大提升我们操作虚拟机的体验&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;显著提升虚拟机的性能&lt;/p&gt;
+&lt;p&gt;主要为图形显示性能，例如鼠标卡顿&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现自适应窗口大小&lt;/p&gt;
+&lt;p&gt;当调整VMware窗口大小时，内部的虚拟机可以自动调整分辨率来适应窗口&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实现虚拟机、宿主机文件拖拽&lt;/p&gt;
+&lt;p&gt;最实用的功能，不必解释&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;windows下的安装&#34;&gt;Windows下的安装&lt;/h2&gt;
+&lt;p&gt;vmware对Windows有良好的支持，得益于Windows的图形化操作界面，Windows系统安装VMware是最容易的，具体步骤如下（此处以Windows LTSC为例）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装好Windows虚拟机后，在选项栏选择 workstation/虚拟机/安装VMware Tools&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1_hud7714c4d902f85666426a18e6d798ec9_392570_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1_hud7714c4d902f85666426a18e6d798ec9_392570_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1029&#34;
+				height=&#34;940&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开此电脑发现检测到驱动器，双击运行&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2_hua8ccb8558409fc83a706839675afedd6_207181_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2_hua8ccb8558409fc83a706839675afedd6_207181_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1029&#34;
+				height=&#34;940&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开始安装，无脑下一步即可&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3_hu59c59d503ba1c1b14b135b3f7791ffdd_198945_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3_hu59c59d503ba1c1b14b135b3f7791ffdd_198945_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1029&#34;
+				height=&#34;940&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后虚拟机界面可能会有缩放，说明VMware安装成功，重启虚拟机&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4_hu539f2ccdddedbd64c477c2c50810acab_148264_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4_hu539f2ccdddedbd64c477c2c50810acab_148264_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1029&#34;
+				height=&#34;940&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;linux下的安装&#34;&gt;Linux下的安装&lt;/h2&gt;
+&lt;p&gt;​	Linux需要借助命令行进行安装（最新版的Ubuntu20.4图形化操作貌似已可以实现）&lt;/p&gt;
+&lt;h2 id=&#34;macos下的安装&#34;&gt;macOS下的安装&lt;/h2&gt;
+</description>
+        </item>
+        <item>
         <title>git操作</title>
         <link>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Mon, 26 Apr 2021 21:28:38 +0800</pubDate>

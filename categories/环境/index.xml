@@ -5,6 +5,41 @@
     <link>https://cjj-ck.github.io/categories/%E7%8E%AF%E5%A2%83/</link>
     <description>Recent content in 环境 on 萧尘博客</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://cjj-ck.github.io/categories/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 May 2021 17:55:26 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/categories/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java开发环境配置</title>
+      <link>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <pubDate>Sun, 09 May 2021 17:55:26 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <description>安装JDK   下载jdk安装包
+进入jdk官方下载页面，选择合适的版本进行下载
+
+  双击运行jdk安装包
+
+  点击下一步后，选择安装路径
+建议创建一个java目录将jdk和jre安装在内
+
+  点击下一步开始安装，安装过程会弹出jre的安装，开始进行下一步操作
+  安装JRE   选择合适的jre的安装路径
+
+  点击下一步进行安装，安装完成后点击关闭，就可以开始配置环境变量了
+
+  配置环境变量   右击此电脑，点击属性
+
+  选择高级系统设置，在弹出的窗口中点击环境变量
+
+  从用户变量和系统变量中任意选择一个位置进行环境变量的配置
+
+用户变量只在当前Windows用户下有效，若切换成其他用户（如administrator用户），此处的环境变量不生效。而系统变量则在所有用户下均有效。这里使用用户变量演示
+  创建一个JAVA_HOME变量，选择新建，变量值为jdk的安装路径
+
+  创建CLASSPATH变量，变量值为
+.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; 
+  找到Path，双击进行编辑，添加如下两个变量
+%JAVA_HOME%\bin %JAVA_HOME%\jre\bin</description>
+    </item>
+    
   </channel>
 </rss>

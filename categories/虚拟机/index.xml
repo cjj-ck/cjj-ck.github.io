@@ -6,7 +6,33 @@
     <description>Recent content in 虚拟机 on 萧尘博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 25 Apr 2021 22:58:38 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 17:39:00 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMware Tools的安装</title>
+      <link>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+      <pubDate>Sun, 09 May 2021 17:39:00 +0800</pubDate>
+      
+      <guid>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+      <description>VMware Tools的安装 VMware Tools是VMware虚拟机的增强功能，在VMware的虚拟机内安装VMware tools能够大大提升我们操作虚拟机的体验
+  显著提升虚拟机的性能
+主要为图形显示性能，例如鼠标卡顿
+  实现自适应窗口大小
+当调整VMware窗口大小时，内部的虚拟机可以自动调整分辨率来适应窗口
+  实现虚拟机、宿主机文件拖拽
+最实用的功能，不必解释
+  Windows下的安装 vmware对Windows有良好的支持，得益于Windows的图形化操作界面，Windows系统安装VMware是最容易的，具体步骤如下（此处以Windows LTSC为例）：
+  安装好Windows虚拟机后，在选项栏选择 workstation/虚拟机/安装VMware Tools
+
+  打开此电脑发现检测到驱动器，双击运行
+
+  开始安装，无脑下一步即可
+
+  安装完成后虚拟机界面可能会有缩放，说明VMware安装成功，重启虚拟机
+
+  Linux下的安装 ​	Linux需要借助命令行进行安装（最新版的Ubuntu20.4图形化操作貌似已可以实现）
+macOS下的安装 </description>
+    </item>
+    
     <item>
       <title>桥接模式</title>
       <link>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
