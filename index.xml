@@ -210,7 +210,112 @@
         <pubDate>Sun, 09 May 2021 17:55:19 +0800</pubDate>
         
         <guid>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post Python开发环境配置" /&gt;</description>
+        <description>&lt;img src="https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post Python开发环境配置" /&gt;&lt;h2 id=&#34;windows下的安装&#34;&gt;Windows下的安装&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;python官方下载页面&lt;/a&gt;下载合适版本的Python&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 180; flex-basis: 433px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1180x654&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_huba394cd4edfccd70ea8cff1bf837af4b_97800_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_huba394cd4edfccd70ea8cff1bf837af4b_97800_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1180&#34;
+				height=&#34;654&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双击运行，勾选Add Python 3.6 to PATH，并选择第二项自定义安装Python&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1060x798&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_huc847e8ee7f25a0b287ca2fa416ec28dc_503793_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_huc847e8ee7f25a0b287ca2fa416ec28dc_503793_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1060&#34;
+				height=&#34;798&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;勾选的选项为给Python添加环境变量，这一步很重要，若此处忘记勾选，安装成功后也要手动添加环境变量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检查是否全部勾选，点击下一步&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1060x796&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu09acfed700e72b8d133bf55ecdd44127_496995_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu09acfed700e72b8d133bf55ecdd44127_496995_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1060&#34;
+				height=&#34;796&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;勾选Install for all users，然后选择合适的安装路径，点击下一步&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1057x796&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hud8418c0f155f87f2f6eaa7e072eb1b0b_503498_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hud8418c0f155f87f2f6eaa7e072eb1b0b_503498_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1057&#34;
+				height=&#34;796&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击install弹出的提示框中点击是，则开始安装&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34; data-size=&#34;1054x795&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hub6b8aab7cbdd6441d7d7ed650ec0f120_444485_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hub6b8aab7cbdd6441d7d7ed650ec0f120_444485_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1054&#34;
+				height=&#34;795&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装成功后点击close关闭安装窗口，打开命令行检查是否安装成功，输入python后回车&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 316; flex-basis: 760px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34; data-size=&#34;1020x322&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hud1ef00bf4ca87e2b6e9e9613ae7317fe_27087_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hud1ef00bf4ca87e2b6e9e9613ae7317fe_27087_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1020&#34;
+				height=&#34;322&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;至此，Python3.6安装成功&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;linux下的安装&#34;&gt;Linux下的安装&lt;/h2&gt;
+&lt;p&gt;Linux自带Python环境，但版本较低，不太适合现在的开发&lt;/p&gt;
+&lt;h4 id=&#34;apt安装&#34;&gt;apt安装&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打开终端输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install python3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载pip包管理工具&lt;/p&gt;
+&lt;p&gt;linux下载的python不会附带pip包管理工具的安装，需要额外手动安装&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install python3-pip
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;离线包解压安装&#34;&gt;离线包解压安装&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;下载Linux版python包&lt;/li&gt;
+&lt;li&gt;解压&lt;/li&gt;
+&lt;li&gt;安装&lt;/li&gt;
+&lt;li&gt;安装pip&lt;/li&gt;
+&lt;/ol&gt;
+</description>
         </item>
         <item>
         <title>C语言开发环境配置</title>
@@ -218,7 +323,100 @@
         <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
         
         <guid>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post C语言开发环境配置" /&gt;</description>
+        <description>&lt;img src="https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post C语言开发环境配置" /&gt;&lt;h2 id=&#34;windows10下的部署&#34;&gt;Windows10下的部署&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;准备好现成的MinGW64压缩包，解压到合适的位置&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1055x795&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hubd6392ab2a69d18b742ff317ef842669_830674_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hubd6392ab2a69d18b742ff317ef842669_830674_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1055&#34;
+				height=&#34;795&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入解压后的目录下的bin文件夹，复制该文件夹的路径&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1060x794&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu654f1f7ee79c6deffaee80c088c3cc71_189172_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu654f1f7ee79c6deffaee80c088c3cc71_189172_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1060&#34;
+				height=&#34;794&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;桌面上右击此电脑，依次点击 属性/高级系统设置/环境变量，进入环境变量的编辑界面&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1054x794&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_huefa4654c2e87da386a6fc304a0b59a0b_153053_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_huefa4654c2e87da386a6fc304a0b59a0b_153053_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1054&#34;
+				height=&#34;794&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双击Path，将刚刚复制的地址粘贴进去&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 319px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34; data-size=&#34;1060x797&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hueb72eb05df8ae8ecdd423290230cbdc0_157039_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hueb72eb05df8ae8ecdd423290230cbdc0_157039_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1060&#34;
+				height=&#34;797&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;填好路径后，一直点击确定以保存更改。最后检查是否配置成功&lt;/p&gt;
+&lt;p&gt;打开命令行，输入gcc  -v后回车查看C语言编译器是否配置成功&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
+		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1060x794&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
+				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hua3e2d47109b53bab8059bc90b3a74352_220287_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hua3e2d47109b53bab8059bc90b3a74352_220287_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1060&#34;
+				height=&#34;794&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;随后输入g++ -v 和 gdb -v 检查C++和调试器是否配置成功&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;至此，Windows下的C/C++环境配置成功&lt;/p&gt;
+&lt;h2 id=&#34;linux下的配置&#34;&gt;Linux下的配置&lt;/h2&gt;
+&lt;p&gt;Linux下的环境配置更简单，几行命令就完事&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;打开终端，输入以下命令下载安装C编译器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install gcc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装C++编译器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install g++
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装gdb调试器&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install gdb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检查是否安装成功&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcc -v
+g++ -v
+gdb -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
         </item>
         <item>
         <title>VMware Tools的安装</title>
