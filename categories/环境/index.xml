@@ -74,7 +74,8 @@ sudo apt-get install python3-pip   离线包解压安装  下载Linux版python�
       <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
       
       <guid>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-      <description>Windows10下的部署   准备好现成的MinGW64压缩包，解压到合适的位置
+      <description>Windows10下的部署   下载C/C++编译器MinGW64压缩包，解压到合适的位置
+下载地址：https://wwe.lanzous.com/iCIlQdq2r1e
 
   进入解压后的目录下的bin文件夹，复制该文件夹的路径
 

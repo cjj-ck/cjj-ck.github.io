@@ -30,7 +30,13 @@
   安装完成后虚拟机界面可能会有缩放，说明VMware安装成功，重启虚拟机
 
   Linux下的安装 ​	Linux需要借助命令行进行安装（最新版的Ubuntu20.4图形化操作貌似已可以实现）
-macOS下的安装 </description>
+kali Linux如果是虚拟机版会自带VMwareTools
+  在选项栏选择 workstation/虚拟机/安装VMware Tools，应用栏会出现一个DVD图标，点进去
+
+  将里面的.tar.gz安装包复制出来
+
+  解压刚刚复制出来的压缩包
+tar -xzvf [.tar.gz压缩包文件名]</description>
     </item>
     
     <item>

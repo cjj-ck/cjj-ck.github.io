@@ -304,7 +304,132 @@
 </ol>
 <h2 id="linux下的安装">Linux下的安装</h2>
 <p>​	Linux需要借助命令行进行安装（最新版的Ubuntu20.4图形化操作貌似已可以实现）</p>
+<p>kali Linux如果是虚拟机版会自带VMwareTools</p>
+<ol>
+<li>
+<p>在选项栏选择 workstation/虚拟机/安装VMware Tools，应用栏会出现一个DVD图标，点进去</p>
+<p><figure style="flex-grow: 133; flex-basis: 319px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5.png" data-size="801x601"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5_hu832061a36b8ca0e59efd2c1d0c0161a6_509885_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5_hu832061a36b8ca0e59efd2c1d0c0161a6_509885_1024x0_resize_box_2.png 1024w"
+				width="801"
+				height="601"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>将里面的.tar.gz安装包复制出来</p>
+<p><figure style="flex-grow: 133; flex-basis: 320px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6.png" data-size="799x599"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6_hu39879ac171ed87de59200156b469d14d_84026_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6_hu39879ac171ed87de59200156b469d14d_84026_1024x0_resize_box_2.png 1024w"
+				width="799"
+				height="599"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>解压刚刚复制出来的压缩包</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">tar -xzvf <span class="o">[</span>.tar.gz压缩包文件名<span class="o">]</span>
+</code></pre></div><p><figure style="flex-grow: 133; flex-basis: 320px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7.png" data-size="800x600"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7_hu3d16635c209d24020abd8f9eae7ed808_153177_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7_hu3d16635c209d24020abd8f9eae7ed808_153177_1024x0_resize_box_2.png 1024w"
+				width="800"
+				height="600"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>在解压后的目录的根目录里打开终端，运行</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">sudo ./vmware-install.pl
+</code></pre></div><p><figure style="flex-grow: 139; flex-basis: 335px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8.png" data-size="799x572"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8_hua5f7c126243332cf29233690b81442e5_71931_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8_hua5f7c126243332cf29233690b81442e5_71931_1024x0_resize_box_2.png 1024w"
+				width="799"
+				height="572"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>输入密码后开始安装，安装过程会有停顿大概分以下三种操作</p>
+<ul>
+<li>输入密码后的第一个提示输入yes后回车</li>
+<li>有[yes]或者[no]根据提示输入yes或no回车</li>
+<li>只有路径没有提示则直接回车，直到出现enjoy。</li>
+</ul>
+<p><figure style="flex-grow: 132; flex-basis: 318px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9.png" data-size="799x602"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9_hu1181c9fabcff42630047fdb22b74d42f_105066_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9_hu1181c9fabcff42630047fdb22b74d42f_105066_1024x0_resize_box_2.png 1024w"
+				width="799"
+				height="602"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<p><figure style="flex-grow: 134; flex-basis: 322px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10.png" data-size="800x595"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10_huc1fa950d7c306f11b65660922a57b9f0_122355_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10_huc1fa950d7c306f11b65660922a57b9f0_122355_1024x0_resize_box_2.png 1024w"
+				width="800"
+				height="595"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>安装成功后重启虚拟机就OK了。</p>
+</li>
+</ol>
 <h2 id="macos下的安装">macOS下的安装</h2>
+<p>macOS在点击“安装VMwareTools”时可能会出现报错，系统无法读取到VMware Tools镜像，需要自己下载Mac系统的VMwareTools镜像安装。</p>
+<ol>
+<li>
+<p>下载VMwareTools镜像</p>
+<p>链接：https://wwe.lanzoui.com/iObPYp4mr0d</p>
+</li>
+<li>
+<p>打开虚拟机设置，在CD/DVD的连接一栏将VMwareTools安装镜像导进去（此时虚拟机为关机状态）</p>
+<p><figure style="flex-grow: 212; flex-basis: 510px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11.png" data-size="1058x497"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11_hu565fbc99cbfdf5f3a9a703c3bda156f6_40074_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11_hu565fbc99cbfdf5f3a9a703c3bda156f6_40074_1024x0_resize_box_2.png 1024w"
+				width="1058"
+				height="497"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>打开macOS，发现桌面出现镜像文件则导入成功，双击运行</p>
+<p><figure style="flex-grow: 140; flex-basis: 337px">
+		<a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12.png" data-size="1200x854"><img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12.png"
+				srcset="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12_hu0f2c1e8f5c33aaf8d69022f8bdaf3f2c_1550357_480x0_resize_box_2.png 480w, /p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12_hu0f2c1e8f5c33aaf8d69022f8bdaf3f2c_1550357_1024x0_resize_box_2.png 1024w"
+				width="1200"
+				height="854"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>安装期间需要输入账户密码</p>
+<p>打开设置、安全与隐私，将左下角的锁点开，再选择App Store认可的安装</p>
+</li>
+</ol>
 
 </section>
 
