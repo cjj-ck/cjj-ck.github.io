@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='虚拟机设置桥接模式连接网络'><title>桥接模式</title>
+
+<link rel='canonical' href='https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='桥接模式'>
+<meta property='og:description' content='虚拟机设置桥接模式连接网络'>
+<meta property='og:url' content='https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/'>
+<meta property='og:site_name' content='cjj-blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2021-04-25T22:58:38&#43;08:00'/><meta property='article:modified_time' content='2021-04-25T22:58:38&#43;08:00'/><meta property='og:image' content='https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img.jpg' />
+<meta name="twitter:title" content="桥接模式">
+<meta name="twitter:description" content="虚拟机设置桥接模式连接网络"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img.jpg' />
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hud7cafcdce8379ed3970215863531deab_10362_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://example.com">cjj-blog</a></h1>
+        <h2 class="site-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/%E5%85%B3%E4%BA%8E/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>分类</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://example.com" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/">
+                <img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img_hu2d67d7de06703bec5bb28165f3242d01_51442_800x0_resize_q75_box.jpg"
+                        srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img_hu2d67d7de06703bec5bb28165f3242d01_51442_800x0_resize_q75_box.jpg 800w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img_hu2d67d7de06703bec5bb28165f3242d01_51442_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="402" 
+                        loading="lazy"
+                        alt="Featured image of post 桥接模式" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/" >
+                虚拟机
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/">桥接模式</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        虚拟机设置桥接模式连接网络
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Apr 25, 2021</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h2 id="虚拟机桥接模式">虚拟机桥接模式</h2>
+<p>桥接模式就是将<strong>主机网卡</strong>与<strong>虚拟机的网卡</strong>利用<strong>虚拟网桥</strong>进行通信。</p>
+<p>在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。</p>
+<p>在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致</p>
+<h2 id="桥接模式配置">桥接模式配置</h2>
+<h3 id="查看需要桥接的网卡">查看需要桥接的网卡</h3>
+<ol>
+<li>
+<p>右击右下角网络图标点击<strong>打开网络和Internet设置</strong><figure style="flex-grow: 254; flex-basis: 610px">
+		<a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1.png" data-size="346x136"><img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1.png"
+				srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1_hu5a5e6034ed82c5dc16fd9ac678581afb_23026_480x0_resize_box_2.png 480w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1_hu5a5e6034ed82c5dc16fd9ac678581afb_23026_1024x0_resize_box_2.png 1024w"
+				width="346"
+				height="136"
+				loading="lazy"
+				alt="1">
+		</a>
+		
+		<figcaption>1</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>下滑找到<strong>查看网络属性</strong><figure style="flex-grow: 173; flex-basis: 415px">
+		<a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2.png" data-size="1347x778"><img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2.png"
+				srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2_hu077b819b0fad93bcce56a7cb2631e08a_289914_480x0_resize_box_2.png 480w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2_hu077b819b0fad93bcce56a7cb2631e08a_289914_1024x0_resize_box_2.png 1024w"
+				width="1347"
+				height="778"
+				loading="lazy"
+				alt="2">
+		</a>
+		
+		<figcaption>2</figcaption>
+		
+	</figure></p>
+</li>
+<li>
+<p>找到正在使用的网卡</p>
+<p>比如我现在正在使用无线网络，到这里找到有关于此网络的信息，包括我们现在要找的无线网卡名称</p>
+<p><figure style="flex-grow: 85; flex-basis: 205px">
+		<a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3.jpg" data-size="580x677"><img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3.jpg"
+				srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3_hu8f247dc7b2ed912aa7dfae59c851bfd4_672707_480x0_resize_q75_box.jpg 480w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3_hu8f247dc7b2ed912aa7dfae59c851bfd4_672707_1024x0_resize_q75_box.jpg 1024w"
+				width="580"
+				height="677"
+				loading="lazy"
+				alt="3">
+		</a>
+		
+		<figcaption>3</figcaption>
+		
+	</figure></p>
+</li>
+</ol>
+<h3 id="设置桥接网卡">设置桥接网卡</h3>
+<p>打开vmware，点击编辑、虚拟网络编辑器，将桥接的网卡设置成刚刚查看到的网卡</p>
+<p><figure style="flex-grow: 109; flex-basis: 263px">
+		<a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4.png" data-size="707x645"><img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4.png"
+				srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4_hu9c9e7b1e15acaa10da329ec063321d4c_40648_480x0_resize_box_2.png 480w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4_hu9c9e7b1e15acaa10da329ec063321d4c_40648_1024x0_resize_box_2.png 1024w"
+				width="707"
+				height="645"
+				loading="lazy"
+				alt="4">
+		</a>
+		
+		<figcaption>4</figcaption>
+		
+	</figure></p>
+<p>注：若系统账户不是Administrator，会提示权限不够，打开VMware时右击以管理员身份运行就可以了</p>
+<h2 id="虚拟机内部网ip配置">虚拟机内部网IP配置</h2>
+<p>以Ubuntu20.04为例</p>
+<ol>
+<li>点击右上角的网络图标、有线、有线设置</li>
+</ol>
+<p><figure style="flex-grow: 85; flex-basis: 205px">
+		<a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5.png" data-size="321x375"><img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5.png"
+				srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5_hu0cfa11b3ae51892f36bed2eb662dbafc_25959_480x0_resize_box_2.png 480w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5_hu0cfa11b3ae51892f36bed2eb662dbafc_25959_1024x0_resize_box_2.png 1024w"
+				width="321"
+				height="375"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+<ol start="2">
+<li>
+<p>在有线一栏点击齿轮、IPV4</p>
+<p><figure style="flex-grow: 219; flex-basis: 525px">
+		<a href="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6.png" data-size="791x361"><img src="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6.png"
+				srcset="/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6_hu3a1a77bd0129742041c88364519723b0_35907_480x0_resize_box_2.png 480w, /p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6_hu3a1a77bd0129742041c88364519723b0_35907_1024x0_resize_box_2.png 1024w"
+				width="791"
+				height="361"
+				loading="lazy"
+				>
+		</a>
+		
+	</figure></p>
+</li>
+<li>
+<p>开始配置IP</p>
+<ul>
+<li>IPV4方式：手动</li>
+<li>地址：
+<ul>
+<li>地址：设置成与宿主机同一网段下的其他IP地址</li>
+<li>子网掩码：与宿主机保持一致</li>
+<li>网关：与宿主机保持一致</li>
+</ul>
+</li>
+<li>DNS：与宿主机保持一致</li>
+<li>路由：自动就好</li>
+</ul>
+</li>
+</ol>
+<h2 id="校园网的桥接问题">校园网的桥接问题</h2>
+<p>如果宿主机连接的是类似校园网这种需要认证的网络时，会有如下问题：</p>
+<ul>
+<li>
+<p>设置虚拟机内的IP地址时，除了宿主机的IP地址，其他的地址均无法上网</p>
+</li>
+<li>
+<p>如果虚拟机设置成宿主机一样的IP，会导致宿主机无法正常连接网络</p>
+</li>
+</ul>
+<p>造成这种现象的原因是：虚拟机桥接网络时，这个虚拟机就相当于连接校园网的另一台主机，这台主机也需要像宿主机一样通过认证才允许连接网络</p>
+<p>我的解决办法是，让手机连接校园网的同时开启热点，让宿主机连接手机热点，这样便能正常进行桥接了</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/">
+        
+        
+            <div class="article-image">
+                <img src="/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/img.33e04025eb407f58ff2debde82b93454_hudf3bcae802c9d93c2b6db0275eae5d12_19026_250x150_fill_box_smart1_2.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-M&#43;BAJetAf1j/Levegrk0VA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">VMware Tools的安装</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "hugo-theme-stack" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 cjj-blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
