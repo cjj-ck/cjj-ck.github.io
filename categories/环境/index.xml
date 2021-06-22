@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>环境 on 萧尘博客</title>
-    <link>https://cjj-ck.github.io/categories/%E7%8E%AF%E5%A2%83/</link>
-    <description>Recent content in 环境 on 萧尘博客</description>
+    <title>环境 on cjj-blog</title>
+    <link>https://example.com/categories/%E7%8E%AF%E5%A2%83/</link>
+    <description>Recent content in 环境 on cjj-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 17:55:26 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/categories/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 17:43:02 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python虚拟环境</title>
+      <link>https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sun, 16 May 2021 17:43:02 +0800</pubDate>
+      
+      <guid>https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description>python虚拟环境 1. 什么是虚拟环境 ​	python虚拟环境是独立于已经安装的python环境的环境，各个环境之间互不影响。比如我正在学习python爬虫，我可以创建一个名为spider的虚拟环境专门放置与爬虫有关的包，过段时间我学习Django，可以创建一个名为dj的环境安装Django。
+​	不仅仅是方便管理，虚拟环境还能减少环境冲突和包之间的冲突以及其他不必要的麻烦，比如以下场景：
+  项目A使用的是Django1.9，而项目B需要Django2.1
+  项目A使用python2.7，项目B使用python3.8
+  2. 虚拟环境管理包（virtualenvwrapper） 2.1 下载管理包 打开命令行，用pip安装virtualenvwrapper
+  Windows下：
+pip install virtualenvwrapper-win   linux下：
+pip install virtuallenvwrapper   2.2 常用操作   创建虚拟环境（创建后会自动进入创建的虚拟环境）
+mkvirtualenv &amp;lt;name&amp;gt; 为虚拟环境的名称
+  退出虚拟环境
+deactivate   进入虚拟环境
+workon &amp;lt;name&amp;gt; 进入虚拟环境后用pip安装python包只会安装在该虚拟环境下
+  删除虚拟环境
+rmvirtualenv &amp;lt;name&amp;gt;   3. 第三房包管理工具（anaconda） 3.1 下载anaconda 下载地址：https://www.anaconda.com/download/
+3.2 常用操作   环境操作
+  创建虚拟环境</description>
+    </item>
+    
     <item>
       <title>Java开发环境配置</title>
-      <link>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://example.com/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 09 May 2021 17:55:26 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://example.com/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>安装JDK   下载jdk安装包
 进入jdk官方下载页面，选择合适的版本进行下载
 
@@ -43,10 +67,10 @@
     
     <item>
       <title>Python开发环境配置</title>
-      <link>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 09 May 2021 17:55:19 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>Windows下的安装   进入python官方下载页面下载合适版本的Python
 
   双击运行，勾选Add Python 3.6 to PATH，并选择第二项自定义安装Python
@@ -70,10 +94,10 @@ sudo apt-get install python3-pip   离线包解压安装  下载Linux版python�
     
     <item>
       <title>C语言开发环境配置</title>
-      <link>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://example.com/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://example.com/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>Windows10下的部署   下载C/C++编译器MinGW64压缩包，解压到合适的位置
 下载地址：https://wwe.lanzous.com/iCIlQdq2r1e
 
@@ -94,6 +118,23 @@ sudo apt-get install gcc   安装C++编译器
 sudo apt-get install g++   安装gdb调试器
 sudo apt-get install gdb   检查是否安装成功
 gcc -v g++ -v gdb -v   </description>
+    </item>
+    
+    <item>
+      <title>linux安装软件</title>
+      <link>https://example.com/p/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
+      
+      <guid>https://example.com/p/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</guid>
+      <description>1. apt安装 需要知道需要安装的软件在apt源中的包名
+命令
+sudo apt-get install &amp;lt;软件名&amp;gt; 卸载
+sudo apt-get remove &amp;lt;软件名&amp;gt; 2. deb包安装 deb包是基于Debian linux的发行版的软件安装包，其中，Ubuntu、kali都是基于Debian的linux发行版
+2.1 下载要安装的deb包 以VScode为例，桌面上是一个已经下载好的vscodedeb安装包
+2.3 命令行安装 在deb包所在位置打开终端，执行安装命令
+sudo dpkg -i &amp;lt;包名&amp;gt;2.4 添加快捷方式 安装好之后，不会像Windows一样自动创建桌面快捷方式，需要手动创建
+首先找到安装好的VScode，点开左上角的kali图标，搜索
+拖动到桌面就可以，此时deb安装包可以删除了</description>
     </item>
     
   </channel>

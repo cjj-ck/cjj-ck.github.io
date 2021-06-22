@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>虚拟机 on 萧尘博客</title>
-    <link>https://cjj-ck.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
-    <description>Recent content in 虚拟机 on 萧尘博客</description>
+    <title>虚拟机 on cjj-blog</title>
+    <link>https://example.com/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/</link>
+    <description>Recent content in 虚拟机 on cjj-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 17:39:00 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 May 2021 17:39:00 +0800</lastBuildDate><atom:link href="https://example.com/categories/%E8%99%9A%E6%8B%9F%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VMware Tools的安装</title>
-      <link>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+      <link>https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
       <pubDate>Sun, 09 May 2021 17:39:00 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
       <description>VMware Tools的安装 VMware Tools是VMware虚拟机的增强功能，在VMware的虚拟机内安装VMware tools能够大大提升我们操作虚拟机的体验
   显著提升虚拟机的性能
 主要为图形显示性能，例如鼠标卡顿
@@ -41,10 +41,10 @@ tar -xzvf [.tar.gz压缩包文件名]</description>
     
     <item>
       <title>桥接模式</title>
-      <link>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
+      <link>https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Sun, 25 Apr 2021 22:58:38 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
       <description>虚拟机桥接模式 桥接模式就是将主机网卡与虚拟机的网卡利用虚拟网桥进行通信。
 在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。
 在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致

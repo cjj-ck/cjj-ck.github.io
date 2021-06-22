@@ -1,223 +1,185 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>萧尘博客</title>
-        <link>https://cjj-ck.github.io/</link>
-        <description>Recent content on 萧尘博客</description>
+        <title>cjj-blog</title>
+        <link>https://example.com/</link>
+        <description>Recent content on cjj-blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 09 May 2021 17:55:26 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Java开发环境配置</title>
-        <link>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
-        <pubDate>Sun, 09 May 2021 17:55:26 +0800</pubDate>
+        <lastBuildDate>Sun, 16 May 2021 17:43:02 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Python虚拟环境</title>
+        <link>https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+        <pubDate>Sun, 16 May 2021 17:43:02 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post Java开发环境配置" /&gt;&lt;h2 id=&#34;安装jdk&#34;&gt;安装JDK&lt;/h2&gt;
+        <guid>https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+        <description>&lt;img src="https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/img.png" alt="Featured image of post Python虚拟环境" /&gt;&lt;h1 id=&#34;python虚拟环境&#34;&gt;python虚拟环境&lt;/h1&gt;
+&lt;h2 id=&#34;1-什么是虚拟环境&#34;&gt;1. 什么是虚拟环境&lt;/h2&gt;
+&lt;p&gt;​		python虚拟环境是独立于已经安装的python环境的环境，各个环境之间互不影响。比如我正在学习python爬虫，我可以创建一个名为spider的虚拟环境专门放置与爬虫有关的包，过段时间我学习Django，可以创建一个名为dj的环境安装Django。&lt;/p&gt;
+&lt;p&gt;​		不仅仅是方便管理，虚拟环境还能减少环境冲突和包之间的冲突以及其他不必要的麻烦，比如以下场景：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;项目A使用的是Django1.9，而项目B需要Django2.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;项目A使用python2.7，项目B使用python3.8&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;2-虚拟环境管理包virtualenvwrapper&#34;&gt;2. 虚拟环境管理包（virtualenvwrapper）&lt;/h2&gt;
+&lt;h3 id=&#34;21-下载管理包&#34;&gt;2.1 下载管理包&lt;/h3&gt;
+&lt;p&gt;打开命令行，用pip安装virtualenvwrapper&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Windows下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pip install virtualenvwrapper-win
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;linux下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;pip install virtuallenvwrapper
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;22-常用操作&#34;&gt;2.2 常用操作&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;下载jdk安装包&lt;/p&gt;
-&lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;jdk官方下载页面&lt;/a&gt;，选择合适的版本进行下载&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 665; flex-basis: 1596px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1404x211&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hue0602c2e77cbd86693d989c582e6f0c1_29333_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hue0602c2e77cbd86693d989c582e6f0c1_29333_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1404&#34;
-				height=&#34;211&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;创建虚拟环境（创建后会自动进入创建的虚拟环境）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;mkvirtualenv &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;为虚拟环境的名称&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;双击运行jdk安装包&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 134; flex-basis: 322px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1030x766&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu6eb665fca1b703d6b4b4af4fa158e880_206546_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu6eb665fca1b703d6b4b4af4fa158e880_206546_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;766&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;退出虚拟环境&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入虚拟环境&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;workon &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;进入虚拟环境后用pip安装python包只会安装在该虚拟环境下&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;点击下一步后，选择安装路径&lt;/p&gt;
-&lt;p&gt;建议创建一个java目录将jdk和jre安装在内&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1030x774&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu3e1078cc3779f241e193a82f2c722f5f_283999_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu3e1078cc3779f241e193a82f2c722f5f_283999_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;774&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;点击下一步开始安装，安装过程会弹出jre的安装，开始进行下一步操作&lt;/p&gt;
-&lt;/li&gt;
+&lt;p&gt;删除虚拟环境&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;rmvirtualenv &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;安装jre&#34;&gt;安装JRE&lt;/h2&gt;
+&lt;h2 id=&#34;3-第三房包管理工具anaconda&#34;&gt;3. 第三房包管理工具（anaconda）&lt;/h2&gt;
+&lt;h3 id=&#34;31--下载anaconda&#34;&gt;3.1  下载anaconda&lt;/h3&gt;
+&lt;p&gt;下载地址：https://www.anaconda.com/download/&lt;/p&gt;
+&lt;h3 id=&#34;32-常用操作&#34;&gt;3.2 常用操作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;环境操作&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;选择合适的jre的安装路径&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34; data-size=&#34;1030x774&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hu87f4be413dc5805320049943cb1cc7bc_186763_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hu87f4be413dc5805320049943cb1cc7bc_186763_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;774&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;创建虚拟环境&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda create -n &amp;lt;name&amp;gt; python=3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda create --name &amp;lt;name&amp;gt; python=3.6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以通过python &amp;ndash;version查看python版本&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;点击下一步进行安装，安装完成后点击关闭，就可以开始配置环境变量了&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1030x770&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hubdd8546c721f633c98650f252823587a_199396_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hubdd8546c721f633c98650f252823587a_199396_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;770&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;配置环境变量&#34;&gt;配置环境变量&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;右击此电脑，点击属性&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34; data-size=&#34;1030x773&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hu64ad21570e9e5c14e0c40552a1d1c3bc_434653_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hu64ad21570e9e5c14e0c40552a1d1c3bc_434653_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;773&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;选择高级系统设置，在弹出的窗口中点击环境变量&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34; data-size=&#34;1030x770&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hua15faccac33c046d3ba73e73f0847941_124403_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hua15faccac33c046d3ba73e73f0847941_124403_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;770&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;从用户变量和系统变量中任意选择一个位置进行环境变量的配置&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8.png&#34; data-size=&#34;1030x771&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8_huc5a328932a3fac42f0a44bfc6ebe1441_124647_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/8_huc5a328932a3fac42f0a44bfc6ebe1441_124647_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;771&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;用户变量只在当前Windows用户下有效，若切换成其他用户（如administrator用户），此处的环境变量不生效。而系统变量则在所有用户下均有效。这里使用用户变量演示&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;创建一个JAVA_HOME变量，选择新建，变量值为jdk的安装路径&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9.png&#34; data-size=&#34;1030x769&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9_hu7f0ae1bf687b9bb04685a4876e98b6c8_125869_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/9_hu7f0ae1bf687b9bb04685a4876e98b6c8_125869_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;769&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;创建CLASSPATH变量，变量值为&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10.png&#34; data-size=&#34;1030x772&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10_hu69fc17b8b1bfdc1b173fc395a5598286_131693_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/10_hu69fc17b8b1bfdc1b173fc395a5598286_131693_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;772&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;找到Path，双击进行编辑，添加如下两个变量&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;%JAVA_HOME%\bin
-%JAVA_HOME%\jre\bin
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 321px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11.png&#34; data-size=&#34;1030x770&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11_hu253ced2e02a6d30bd4da95a7b35b77a9_119778_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/11_hu253ced2e02a6d30bd4da95a7b35b77a9_119778_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1030&#34;
-				height=&#34;770&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;如果环境变量是单行的风格，则添加的环境变量为&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+&lt;p&gt;切换、进入虚拟环境&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;activate &amp;lt;name&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;编辑好后一直点击确定以保存更改，现在检查环境变量是否成功配置&lt;/p&gt;
-&lt;p&gt;打开命令行，输入java后回车&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12.png&#34; data-size=&#34;1063x801&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12_hua496e838af2f47073f90d0ae979659d6_160985_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/12_hua496e838af2f47073f90d0ae979659d6_160985_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1063&#34;
-				height=&#34;801&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;再输入javac后回车&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13.png&#34; data-size=&#34;1061x799&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13_hu4e5051af7c515c3be1e7afb70480cb4c_225226_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/13_hu4e5051af7c515c3be1e7afb70480cb4c_225226_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1061&#34;
-				height=&#34;799&#34;
+&lt;p&gt;卸载虚拟环境&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda remove --name &amp;lt;name&amp;gt; --all
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看所有的虚拟环境&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda env list
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;包操作&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;安装包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda install &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip install &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;卸载包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda remove &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;或&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;pip uninstall &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看当前环境下所有的包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda list
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;删除指定环境下所有的包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda remove -n &amp;lt;name&amp;gt; --all
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更新指定的包&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;conda update &amp;lt;name&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;4-更改虚拟环境的路径&#34;&gt;4. 更改虚拟环境的路径&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;添加环境变量&lt;/p&gt;
+&lt;p&gt;变量名：WORKON_HOME&lt;/p&gt;
+&lt;p&gt;变量值：虚拟环境路径&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 395; flex-basis: 949px&#34;&gt;
+		&lt;a href=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.png&#34; data-size=&#34;1025x259&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1.png&#34;
+				srcset=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1_hu46a67a9bdb75d1b42ccec85ba7239bd0_14324_480x0_resize_box_2.png 480w, https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/1_hu46a67a9bdb75d1b42ccec85ba7239bd0_14324_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1025&#34;
+				height=&#34;259&#34;
 				loading=&#34;lazy&#34;
 				&gt;
 		&lt;/a&gt;
 		
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改虚拟环境配置文件&lt;/p&gt;
+&lt;p&gt;打开python的安装目录下的Scripts文件夹，找到mkvirtualenv.bat文件&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 162; flex-basis: 391px&#34;&gt;
+		&lt;a href=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.png&#34; data-size=&#34;1354x831&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2.png&#34;
+				srcset=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2_hu8cb924b14ccd4e82cfc0332a7dd1c832_124074_480x0_resize_box_2.png 480w, https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/2_hu8cb924b14ccd4e82cfc0332a7dd1c832_124074_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1354&#34;
+				height=&#34;831&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;右击，点击编辑，找到第24行的&lt;/p&gt;
+&lt;p&gt;set &amp;ldquo;venvwrapper.default_workon_home=%USERPROFILE%\Envs&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;修改为&lt;/p&gt;
+&lt;p&gt;set &amp;ldquo;venvwrapper.default_workon_home=%WORKON_HOME%\Envs&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;figure style=&#34;flex-grow: 190; flex-basis: 457px&#34;&gt;
+		&lt;a href=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.png&#34; data-size=&#34;1126x591&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3.png&#34;
+				srcset=&#34;https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3_hu1236de868e486130015c415c3f32c146_51573_480x0_resize_box_2.png 480w, https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/3_hu1236de868e486130015c415c3f32c146_51573_1024x0_resize_box_2.png 1024w&#34;
+				width=&#34;1126&#34;
+				height=&#34;591&#34;
+				loading=&#34;lazy&#34;
+				&gt;
+		&lt;/a&gt;
+		
+	&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;此后使用mkvirtualenv创建的虚拟环境将会创建在D:env/Pyenv下&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;至此，java开发环境配置完毕&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Python开发环境配置</title>
-        <link>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+        <link>https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Sun, 09 May 2021 17:55:19 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post Python开发环境配置" /&gt;&lt;h2 id=&#34;windows下的安装&#34;&gt;Windows下的安装&lt;/h2&gt;
+        <guid>https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+        <description>&lt;img src="https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post Python开发环境配置" /&gt;&lt;h2 id=&#34;windows下的安装&#34;&gt;Windows下的安装&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;进入&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;python官方下载页面&lt;/a&gt;下载合适版本的Python&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 180; flex-basis: 433px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1180x654&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_huba394cd4edfccd70ea8cff1bf837af4b_97800_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_huba394cd4edfccd70ea8cff1bf837af4b_97800_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1180x654&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
+				srcset=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_huba394cd4edfccd70ea8cff1bf837af4b_97800_480x0_resize_box_2.png 480w, https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_huba394cd4edfccd70ea8cff1bf837af4b_97800_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1180&#34;
 				height=&#34;654&#34;
 				loading=&#34;lazy&#34;
@@ -229,8 +191,8 @@
 &lt;li&gt;
 &lt;p&gt;双击运行，勾选Add Python 3.6 to PATH，并选择第二项自定义安装Python&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1060x798&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_huc847e8ee7f25a0b287ca2fa416ec28dc_503793_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_huc847e8ee7f25a0b287ca2fa416ec28dc_503793_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1060x798&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
+				srcset=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_huc847e8ee7f25a0b287ca2fa416ec28dc_503793_480x0_resize_box_2.png 480w, https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_huc847e8ee7f25a0b287ca2fa416ec28dc_503793_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1060&#34;
 				height=&#34;798&#34;
 				loading=&#34;lazy&#34;
@@ -243,8 +205,8 @@
 &lt;li&gt;
 &lt;p&gt;检查是否全部勾选，点击下一步&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1060x796&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu09acfed700e72b8d133bf55ecdd44127_496995_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu09acfed700e72b8d133bf55ecdd44127_496995_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1060x796&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
+				srcset=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu09acfed700e72b8d133bf55ecdd44127_496995_480x0_resize_box_2.png 480w, https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_hu09acfed700e72b8d133bf55ecdd44127_496995_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1060&#34;
 				height=&#34;796&#34;
 				loading=&#34;lazy&#34;
@@ -256,8 +218,8 @@
 &lt;li&gt;
 &lt;p&gt;勾选Install for all users，然后选择合适的安装路径，点击下一步&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1057x796&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hud8418c0f155f87f2f6eaa7e072eb1b0b_503498_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hud8418c0f155f87f2f6eaa7e072eb1b0b_503498_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1057x796&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
+				srcset=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hud8418c0f155f87f2f6eaa7e072eb1b0b_503498_480x0_resize_box_2.png 480w, https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hud8418c0f155f87f2f6eaa7e072eb1b0b_503498_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1057&#34;
 				height=&#34;796&#34;
 				loading=&#34;lazy&#34;
@@ -269,8 +231,8 @@
 &lt;li&gt;
 &lt;p&gt;点击install弹出的提示框中点击是，则开始安装&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34; data-size=&#34;1054x795&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hub6b8aab7cbdd6441d7d7ed650ec0f120_444485_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hub6b8aab7cbdd6441d7d7ed650ec0f120_444485_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34; data-size=&#34;1054x795&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6.png&#34;
+				srcset=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hub6b8aab7cbdd6441d7d7ed650ec0f120_444485_480x0_resize_box_2.png 480w, https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/6_hub6b8aab7cbdd6441d7d7ed650ec0f120_444485_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1054&#34;
 				height=&#34;795&#34;
 				loading=&#34;lazy&#34;
@@ -282,8 +244,8 @@
 &lt;li&gt;
 &lt;p&gt;安装成功后点击close关闭安装窗口，打开命令行检查是否安装成功，输入python后回车&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 316; flex-basis: 760px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34; data-size=&#34;1020x322&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hud1ef00bf4ca87e2b6e9e9613ae7317fe_27087_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hud1ef00bf4ca87e2b6e9e9613ae7317fe_27087_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34; data-size=&#34;1020x322&#34;&gt;&lt;img src=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7.png&#34;
+				srcset=&#34;https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hud1ef00bf4ca87e2b6e9e9613ae7317fe_27087_480x0_resize_box_2.png 480w, https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/7_hud1ef00bf4ca87e2b6e9e9613ae7317fe_27087_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1020&#34;
 				height=&#34;322&#34;
 				loading=&#34;lazy&#34;
@@ -318,114 +280,41 @@
 </description>
         </item>
         <item>
-        <title>C语言开发环境配置</title>
-        <link>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+        <title>linux安装软件</title>
+        <link>https://example.com/p/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
         <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/img.jpg" alt="Featured image of post C语言开发环境配置" /&gt;&lt;h2 id=&#34;windows10下的部署&#34;&gt;Windows10下的部署&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;下载C/C++编译器MinGW64压缩包，解压到合适的位置&lt;/p&gt;
-&lt;p&gt;下载地址：https://wwe.lanzous.com/iCIlQdq2r1e&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34; data-size=&#34;1055x795&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hubd6392ab2a69d18b742ff317ef842669_830674_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/1_hubd6392ab2a69d18b742ff317ef842669_830674_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1055&#34;
-				height=&#34;795&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;进入解压后的目录下的bin文件夹，复制该文件夹的路径&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34; data-size=&#34;1060x794&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu654f1f7ee79c6deffaee80c088c3cc71_189172_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/2_hu654f1f7ee79c6deffaee80c088c3cc71_189172_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1060&#34;
-				height=&#34;794&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;桌面上右击此电脑，依次点击 属性/高级系统设置/环境变量，进入环境变量的编辑界面&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34; data-size=&#34;1054x794&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_huefa4654c2e87da386a6fc304a0b59a0b_153053_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/3_huefa4654c2e87da386a6fc304a0b59a0b_153053_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1054&#34;
-				height=&#34;794&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;双击Path，将刚刚复制的地址粘贴进去&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 319px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34; data-size=&#34;1060x797&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hueb72eb05df8ae8ecdd423290230cbdc0_157039_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/4_hueb72eb05df8ae8ecdd423290230cbdc0_157039_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1060&#34;
-				height=&#34;797&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;填好路径后，一直点击确定以保存更改。最后检查是否配置成功&lt;/p&gt;
-&lt;p&gt;打开命令行，输入gcc  -v后回车查看C语言编译器是否配置成功&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34; data-size=&#34;1060x794&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hua3e2d47109b53bab8059bc90b3a74352_220287_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/5_hua3e2d47109b53bab8059bc90b3a74352_220287_1024x0_resize_box_2.png 1024w&#34;
-				width=&#34;1060&#34;
-				height=&#34;794&#34;
-				loading=&#34;lazy&#34;
-				&gt;
-		&lt;/a&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;随后输入g++ -v 和 gdb -v 检查C++和调试器是否配置成功&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;至此，Windows下的C/C++环境配置成功&lt;/p&gt;
-&lt;h2 id=&#34;linux下的配置&#34;&gt;Linux下的配置&lt;/h2&gt;
-&lt;p&gt;Linux下的环境配置更简单，几行命令就完事&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;打开终端，输入以下命令下载安装C编译器&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install gcc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;安装C++编译器&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install g++
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;安装gdb调试器&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install gdb
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;检查是否安装成功&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;gcc -v
-g++ -v
-gdb -v
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ol&gt;
+        <guid>https://example.com/p/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</guid>
+        <description>&lt;img src="https://example.com/img.png" alt="Featured image of post linux安装软件" /&gt;&lt;h2 id=&#34;1-apt安装&#34;&gt;1. apt安装&lt;/h2&gt;
+&lt;p&gt;需要知道需要安装的软件在apt源中的包名&lt;/p&gt;
+&lt;p&gt;命令&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get install &amp;lt;软件名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;卸载&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo apt-get remove &amp;lt;软件名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;2-deb包安装&#34;&gt;2. deb包安装&lt;/h2&gt;
+&lt;p&gt;deb包是基于Debian linux的发行版的软件安装包，其中，Ubuntu、kali都是基于Debian的linux发行版&lt;/p&gt;
+&lt;h3 id=&#34;21-下载要安装的deb包&#34;&gt;2.1 下载要安装的deb包&lt;/h3&gt;
+&lt;p&gt;以VScode为例，桌面上是一个已经下载好的vscodedeb安装包&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://example.com/1.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;23-命令行安装&#34;&gt;2.3 命令行安装&lt;/h3&gt;
+&lt;p&gt;在deb包所在位置打开终端，执行安装命令&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo dpkg -i &amp;lt;包名&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;img src=&#34;https://example.com/2.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;h3 id=&#34;24-添加快捷方式&#34;&gt;2.4 添加快捷方式&lt;/h3&gt;
+&lt;p&gt;安装好之后，不会像Windows一样自动创建桌面快捷方式，需要手动创建&lt;/p&gt;
+&lt;p&gt;首先找到安装好的VScode，点开左上角的kali图标，搜索&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://example.com/3.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;拖动到桌面就可以，此时deb安装包可以删除了&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://example.com/4.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>VMware Tools的安装</title>
-        <link>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+        <link>https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
         <pubDate>Sun, 09 May 2021 17:39:00 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/img.png" alt="Featured image of post VMware Tools的安装" /&gt;&lt;h1 id=&#34;vmware-tools的安装&#34;&gt;VMware Tools的安装&lt;/h1&gt;
+        <guid>https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/img.png" alt="Featured image of post VMware Tools的安装" /&gt;&lt;h1 id=&#34;vmware-tools的安装&#34;&gt;VMware Tools的安装&lt;/h1&gt;
 &lt;p&gt;VMware Tools是VMware虚拟机的增强功能，在VMware的虚拟机内安装VMware tools能够大大提升我们操作虚拟机的体验&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -447,8 +336,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;安装好Windows虚拟机后，在选项栏选择 workstation/虚拟机/安装VMware Tools&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1_hud7714c4d902f85666426a18e6d798ec9_392570_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1_hud7714c4d902f85666426a18e6d798ec9_392570_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1_hud7714c4d902f85666426a18e6d798ec9_392570_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/1_hud7714c4d902f85666426a18e6d798ec9_392570_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1029&#34;
 				height=&#34;940&#34;
 				loading=&#34;lazy&#34;
@@ -460,8 +349,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;打开此电脑发现检测到驱动器，双击运行&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2_hua8ccb8558409fc83a706839675afedd6_207181_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2_hua8ccb8558409fc83a706839675afedd6_207181_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2_hua8ccb8558409fc83a706839675afedd6_207181_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/2_hua8ccb8558409fc83a706839675afedd6_207181_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1029&#34;
 				height=&#34;940&#34;
 				loading=&#34;lazy&#34;
@@ -473,8 +362,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;开始安装，无脑下一步即可&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3_hu59c59d503ba1c1b14b135b3f7791ffdd_198945_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3_hu59c59d503ba1c1b14b135b3f7791ffdd_198945_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3_hu59c59d503ba1c1b14b135b3f7791ffdd_198945_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/3_hu59c59d503ba1c1b14b135b3f7791ffdd_198945_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1029&#34;
 				height=&#34;940&#34;
 				loading=&#34;lazy&#34;
@@ -486,8 +375,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;安装完成后虚拟机界面可能会有缩放，说明VMware安装成功，重启虚拟机&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 262px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4_hu539f2ccdddedbd64c477c2c50810acab_148264_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4_hu539f2ccdddedbd64c477c2c50810acab_148264_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4.png&#34; data-size=&#34;1029x940&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4_hu539f2ccdddedbd64c477c2c50810acab_148264_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/4_hu539f2ccdddedbd64c477c2c50810acab_148264_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1029&#34;
 				height=&#34;940&#34;
 				loading=&#34;lazy&#34;
@@ -504,8 +393,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;在选项栏选择 workstation/虚拟机/安装VMware Tools，应用栏会出现一个DVD图标，点进去&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 319px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5.png&#34; data-size=&#34;801x601&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5_hu832061a36b8ca0e59efd2c1d0c0161a6_509885_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5_hu832061a36b8ca0e59efd2c1d0c0161a6_509885_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5.png&#34; data-size=&#34;801x601&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5_hu832061a36b8ca0e59efd2c1d0c0161a6_509885_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/5_hu832061a36b8ca0e59efd2c1d0c0161a6_509885_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;801&#34;
 				height=&#34;601&#34;
 				loading=&#34;lazy&#34;
@@ -517,8 +406,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;将里面的.tar.gz安装包复制出来&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6.png&#34; data-size=&#34;799x599&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6_hu39879ac171ed87de59200156b469d14d_84026_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6_hu39879ac171ed87de59200156b469d14d_84026_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6.png&#34; data-size=&#34;799x599&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6_hu39879ac171ed87de59200156b469d14d_84026_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/6_hu39879ac171ed87de59200156b469d14d_84026_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;799&#34;
 				height=&#34;599&#34;
 				loading=&#34;lazy&#34;
@@ -531,8 +420,8 @@ gdb -v
 &lt;p&gt;解压刚刚复制出来的压缩包&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;tar -xzvf &lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;.tar.gz压缩包文件名&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7.png&#34; data-size=&#34;800x600&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7_hu3d16635c209d24020abd8f9eae7ed808_153177_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7_hu3d16635c209d24020abd8f9eae7ed808_153177_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7.png&#34; data-size=&#34;800x600&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7_hu3d16635c209d24020abd8f9eae7ed808_153177_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/7_hu3d16635c209d24020abd8f9eae7ed808_153177_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;800&#34;
 				height=&#34;600&#34;
 				loading=&#34;lazy&#34;
@@ -545,8 +434,8 @@ gdb -v
 &lt;p&gt;在解压后的目录的根目录里打开终端，运行&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo ./vmware-install.pl
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 139; flex-basis: 335px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8.png&#34; data-size=&#34;799x572&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8_hua5f7c126243332cf29233690b81442e5_71931_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8_hua5f7c126243332cf29233690b81442e5_71931_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8.png&#34; data-size=&#34;799x572&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8_hua5f7c126243332cf29233690b81442e5_71931_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/8_hua5f7c126243332cf29233690b81442e5_71931_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;799&#34;
 				height=&#34;572&#34;
 				loading=&#34;lazy&#34;
@@ -563,8 +452,8 @@ gdb -v
 &lt;li&gt;只有路径没有提示则直接回车，直到出现enjoy。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 132; flex-basis: 318px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9.png&#34; data-size=&#34;799x602&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9_hu1181c9fabcff42630047fdb22b74d42f_105066_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9_hu1181c9fabcff42630047fdb22b74d42f_105066_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9.png&#34; data-size=&#34;799x602&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9_hu1181c9fabcff42630047fdb22b74d42f_105066_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/9_hu1181c9fabcff42630047fdb22b74d42f_105066_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;799&#34;
 				height=&#34;602&#34;
 				loading=&#34;lazy&#34;
@@ -573,8 +462,8 @@ gdb -v
 		
 	&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 134; flex-basis: 322px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10.png&#34; data-size=&#34;800x595&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10_huc1fa950d7c306f11b65660922a57b9f0_122355_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10_huc1fa950d7c306f11b65660922a57b9f0_122355_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10.png&#34; data-size=&#34;800x595&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10_huc1fa950d7c306f11b65660922a57b9f0_122355_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/10_huc1fa950d7c306f11b65660922a57b9f0_122355_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;800&#34;
 				height=&#34;595&#34;
 				loading=&#34;lazy&#34;
@@ -597,8 +486,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;打开虚拟机设置，在CD/DVD的连接一栏将VMwareTools安装镜像导进去（此时虚拟机为关机状态）&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 212; flex-basis: 510px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11.png&#34; data-size=&#34;1058x497&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11_hu565fbc99cbfdf5f3a9a703c3bda156f6_40074_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11_hu565fbc99cbfdf5f3a9a703c3bda156f6_40074_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11.png&#34; data-size=&#34;1058x497&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11_hu565fbc99cbfdf5f3a9a703c3bda156f6_40074_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/11_hu565fbc99cbfdf5f3a9a703c3bda156f6_40074_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1058&#34;
 				height=&#34;497&#34;
 				loading=&#34;lazy&#34;
@@ -610,8 +499,8 @@ gdb -v
 &lt;li&gt;
 &lt;p&gt;打开macOS，发现桌面出现镜像文件则导入成功，双击运行&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 140; flex-basis: 337px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12.png&#34; data-size=&#34;1200x854&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12_hu0f2c1e8f5c33aaf8d69022f8bdaf3f2c_1550357_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12_hu0f2c1e8f5c33aaf8d69022f8bdaf3f2c_1550357_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12.png&#34; data-size=&#34;1200x854&#34;&gt;&lt;img src=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12.png&#34;
+				srcset=&#34;https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12_hu0f2c1e8f5c33aaf8d69022f8bdaf3f2c_1550357_480x0_resize_box_2.png 480w, https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/12_hu0f2c1e8f5c33aaf8d69022f8bdaf3f2c_1550357_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1200&#34;
 				height=&#34;854&#34;
 				loading=&#34;lazy&#34;
@@ -629,11 +518,11 @@ gdb -v
         </item>
         <item>
         <title>git操作</title>
-        <link>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</link>
+        <link>https://example.com/p/git%E6%93%8D%E4%BD%9C/</link>
         <pubDate>Mon, 26 Apr 2021 21:28:38 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/img.png" alt="Featured image of post git操作" /&gt;&lt;h2 id=&#34;git环境部署&#34;&gt;git环境部署&lt;/h2&gt;
+        <guid>https://example.com/p/git%E6%93%8D%E4%BD%9C/</guid>
+        <description>&lt;img src="https://example.com/p/git%E6%93%8D%E4%BD%9C/img.png" alt="Featured image of post git操作" /&gt;&lt;h2 id=&#34;git环境部署&#34;&gt;git环境部署&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;本地安装git&lt;/p&gt;
@@ -641,8 +530,8 @@ gdb -v
     &gt;git官网&lt;/a&gt;下载git软件，安装过程无脑下一步就行&lt;/p&gt;
 &lt;p&gt;安装成功后在鼠标右击目录下会多出两项&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 65; flex-basis: 157px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/1.png&#34; data-size=&#34;268x408&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/1_hu9b03d72d3bc8b4d08c7d26c6d491b604_17631_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/1_hu9b03d72d3bc8b4d08c7d26c6d491b604_17631_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/1.png&#34; data-size=&#34;268x408&#34;&gt;&lt;img src=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/1.png&#34;
+				srcset=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/1_hu9b03d72d3bc8b4d08c7d26c6d491b604_17631_480x0_resize_box_2.png 480w, https://example.com/p/git%E6%93%8D%E4%BD%9C/1_hu9b03d72d3bc8b4d08c7d26c6d491b604_17631_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;268&#34;
 				height=&#34;408&#34;
 				loading=&#34;lazy&#34;
@@ -688,8 +577,8 @@ git config --global user.email 邮箱
 &lt;li&gt;打开设置&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 130; flex-basis: 313px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/2.png&#34; data-size=&#34;526x403&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/2_hu9e8316138cb8305ff14015d650afc322_18196_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/2_hu9e8316138cb8305ff14015d650afc322_18196_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/2.png&#34; data-size=&#34;526x403&#34;&gt;&lt;img src=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/2.png&#34;
+				srcset=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/2_hu9e8316138cb8305ff14015d650afc322_18196_480x0_resize_box_2.png 480w, https://example.com/p/git%E6%93%8D%E4%BD%9C/2_hu9e8316138cb8305ff14015d650afc322_18196_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;526&#34;
 				height=&#34;403&#34;
 				loading=&#34;lazy&#34;
@@ -701,8 +590,8 @@ git config --global user.email 邮箱
 &lt;li&gt;
 &lt;p&gt;进入SSH公钥选项&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 40; flex-basis: 96px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/3.png&#34; data-size=&#34;323x802&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/3.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/3_hubcc8aee5da055be9c9db253177c13e3f_18546_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/3_hubcc8aee5da055be9c9db253177c13e3f_18546_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/3.png&#34; data-size=&#34;323x802&#34;&gt;&lt;img src=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/3.png&#34;
+				srcset=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/3_hubcc8aee5da055be9c9db253177c13e3f_18546_480x0_resize_box_2.png 480w, https://example.com/p/git%E6%93%8D%E4%BD%9C/3_hubcc8aee5da055be9c9db253177c13e3f_18546_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;323&#34;
 				height=&#34;802&#34;
 				loading=&#34;lazy&#34;
@@ -714,8 +603,8 @@ git config --global user.email 邮箱
 &lt;li&gt;
 &lt;p&gt;将刚刚生成的id_rsa.pub文件里的公钥复制到这里&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 341; flex-basis: 820px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/4.png&#34; data-size=&#34;1135x332&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/4.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/4_hu7d445cfef4a42488a6cc0aaa0c2af875_11766_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/4_hu7d445cfef4a42488a6cc0aaa0c2af875_11766_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/4.png&#34; data-size=&#34;1135x332&#34;&gt;&lt;img src=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/4.png&#34;
+				srcset=&#34;https://example.com/p/git%E6%93%8D%E4%BD%9C/4_hu7d445cfef4a42488a6cc0aaa0c2af875_11766_480x0_resize_box_2.png 480w, https://example.com/p/git%E6%93%8D%E4%BD%9C/4_hu7d445cfef4a42488a6cc0aaa0c2af875_11766_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1135&#34;
 				height=&#34;332&#34;
 				loading=&#34;lazy&#34;
@@ -768,11 +657,11 @@ git commit -m &amp;quot;&amp;quot;
         </item>
         <item>
         <title>桥接模式</title>
-        <link>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
+        <link>https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
         <pubDate>Sun, 25 Apr 2021 22:58:38 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img.jpg" alt="Featured image of post 桥接模式" /&gt;&lt;h2 id=&#34;虚拟机桥接模式&#34;&gt;虚拟机桥接模式&lt;/h2&gt;
+        <guid>https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
+        <description>&lt;img src="https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/img.jpg" alt="Featured image of post 桥接模式" /&gt;&lt;h2 id=&#34;虚拟机桥接模式&#34;&gt;虚拟机桥接模式&lt;/h2&gt;
 &lt;p&gt;桥接模式就是将&lt;strong&gt;主机网卡&lt;/strong&gt;与&lt;strong&gt;虚拟机的网卡&lt;/strong&gt;利用&lt;strong&gt;虚拟网桥&lt;/strong&gt;进行通信。&lt;/p&gt;
 &lt;p&gt;在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。&lt;/p&gt;
 &lt;p&gt;在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致&lt;/p&gt;
@@ -781,8 +670,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;右击右下角网络图标点击&lt;strong&gt;打开网络和Internet设置&lt;/strong&gt;&lt;figure style=&#34;flex-grow: 254; flex-basis: 610px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1.png&#34; data-size=&#34;346x136&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1_hu5a5e6034ed82c5dc16fd9ac678581afb_23026_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1_hu5a5e6034ed82c5dc16fd9ac678581afb_23026_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1.png&#34; data-size=&#34;346x136&#34;&gt;&lt;img src=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1.png&#34;
+				srcset=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1_hu5a5e6034ed82c5dc16fd9ac678581afb_23026_480x0_resize_box_2.png 480w, https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/1_hu5a5e6034ed82c5dc16fd9ac678581afb_23026_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;346&#34;
 				height=&#34;136&#34;
 				loading=&#34;lazy&#34;
@@ -795,8 +684,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;下滑找到&lt;strong&gt;查看网络属性&lt;/strong&gt;&lt;figure style=&#34;flex-grow: 173; flex-basis: 415px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2.png&#34; data-size=&#34;1347x778&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2_hu077b819b0fad93bcce56a7cb2631e08a_289914_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2_hu077b819b0fad93bcce56a7cb2631e08a_289914_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2.png&#34; data-size=&#34;1347x778&#34;&gt;&lt;img src=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2.png&#34;
+				srcset=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2_hu077b819b0fad93bcce56a7cb2631e08a_289914_480x0_resize_box_2.png 480w, https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/2_hu077b819b0fad93bcce56a7cb2631e08a_289914_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1347&#34;
 				height=&#34;778&#34;
 				loading=&#34;lazy&#34;
@@ -811,8 +700,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;p&gt;找到正在使用的网卡&lt;/p&gt;
 &lt;p&gt;比如我现在正在使用无线网络，到这里找到有关于此网络的信息，包括我们现在要找的无线网卡名称&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 85; flex-basis: 205px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3.jpg&#34; data-size=&#34;580x677&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3.jpg&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3_hu8f247dc7b2ed912aa7dfae59c851bfd4_672707_480x0_resize_q75_box.jpg 480w, https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3_hu8f247dc7b2ed912aa7dfae59c851bfd4_672707_1024x0_resize_q75_box.jpg 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3.jpg&#34; data-size=&#34;580x677&#34;&gt;&lt;img src=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3.jpg&#34;
+				srcset=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3_hu8f247dc7b2ed912aa7dfae59c851bfd4_672707_480x0_resize_q75_box.jpg 480w, https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/3_hu8f247dc7b2ed912aa7dfae59c851bfd4_672707_1024x0_resize_q75_box.jpg 1024w&#34;
 				width=&#34;580&#34;
 				height=&#34;677&#34;
 				loading=&#34;lazy&#34;
@@ -827,8 +716,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;h3 id=&#34;设置桥接网卡&#34;&gt;设置桥接网卡&lt;/h3&gt;
 &lt;p&gt;打开vmware，点击编辑、虚拟网络编辑器，将桥接的网卡设置成刚刚查看到的网卡&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 109; flex-basis: 263px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4.png&#34; data-size=&#34;707x645&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4_hu9c9e7b1e15acaa10da329ec063321d4c_40648_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4_hu9c9e7b1e15acaa10da329ec063321d4c_40648_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4.png&#34; data-size=&#34;707x645&#34;&gt;&lt;img src=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4.png&#34;
+				srcset=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4_hu9c9e7b1e15acaa10da329ec063321d4c_40648_480x0_resize_box_2.png 480w, https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/4_hu9c9e7b1e15acaa10da329ec063321d4c_40648_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;707&#34;
 				height=&#34;645&#34;
 				loading=&#34;lazy&#34;
@@ -845,8 +734,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;li&gt;点击右上角的网络图标、有线、有线设置&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 85; flex-basis: 205px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5.png&#34; data-size=&#34;321x375&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5_hu0cfa11b3ae51892f36bed2eb662dbafc_25959_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5_hu0cfa11b3ae51892f36bed2eb662dbafc_25959_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5.png&#34; data-size=&#34;321x375&#34;&gt;&lt;img src=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5.png&#34;
+				srcset=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5_hu0cfa11b3ae51892f36bed2eb662dbafc_25959_480x0_resize_box_2.png 480w, https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/5_hu0cfa11b3ae51892f36bed2eb662dbafc_25959_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;321&#34;
 				height=&#34;375&#34;
 				loading=&#34;lazy&#34;
@@ -858,8 +747,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;li&gt;
 &lt;p&gt;在有线一栏点击齿轮、IPV4&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 219; flex-basis: 525px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6.png&#34; data-size=&#34;791x361&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6_hu3a1a77bd0129742041c88364519723b0_35907_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6_hu3a1a77bd0129742041c88364519723b0_35907_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6.png&#34; data-size=&#34;791x361&#34;&gt;&lt;img src=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6.png&#34;
+				srcset=&#34;https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6_hu3a1a77bd0129742041c88364519723b0_35907_480x0_resize_box_2.png 480w, https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/6_hu3a1a77bd0129742041c88364519723b0_35907_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;791&#34;
 				height=&#34;361&#34;
 				loading=&#34;lazy&#34;
@@ -900,17 +789,17 @@ git commit -m &amp;quot;&amp;quot;
         </item>
         <item>
         <title>linux换源</title>
-        <link>https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/</link>
+        <link>https://example.com/p/linux%E6%8D%A2%E6%BA%90/</link>
         <pubDate>Sat, 24 Apr 2021 22:38:06 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/img.jpg" alt="Featured image of post linux换源" /&gt;&lt;h2 id=&#34;换源&#34;&gt;换源&lt;/h2&gt;
+        <guid>https://example.com/p/linux%E6%8D%A2%E6%BA%90/</guid>
+        <description>&lt;img src="https://example.com/p/linux%E6%8D%A2%E6%BA%90/img.jpg" alt="Featured image of post linux换源" /&gt;&lt;h2 id=&#34;换源&#34;&gt;换源&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;打开kali的终端&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 178; flex-basis: 427px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/1.png&#34; data-size=&#34;1284x721&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/1.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/1_hubb198f352f77049b131fe8ec540d1d10_134361_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/1_hubb198f352f77049b131fe8ec540d1d10_134361_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/1.png&#34; data-size=&#34;1284x721&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/1.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/1_hubb198f352f77049b131fe8ec540d1d10_134361_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/1_hubb198f352f77049b131fe8ec540d1d10_134361_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1284&#34;
 				height=&#34;721&#34;
 				loading=&#34;lazy&#34;
@@ -925,8 +814,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;p&gt;编辑软件源，输入&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;sudo vi /etc/apt/sources.list
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 178; flex-basis: 428px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/2.png&#34; data-size=&#34;1284x720&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/2.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/2_hu2a7da4156475d1f283db6076449ebc96_140097_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/2_hu2a7da4156475d1f283db6076449ebc96_140097_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/2.png&#34; data-size=&#34;1284x720&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/2.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/2_hu2a7da4156475d1f283db6076449ebc96_140097_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/2_hu2a7da4156475d1f283db6076449ebc96_140097_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1284&#34;
 				height=&#34;720&#34;
 				loading=&#34;lazy&#34;
@@ -940,8 +829,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;li&gt;
 &lt;p&gt;如果是非root的普通账户，会提示需要输入登录密码（2020版本后的默认用户kali也是普通用户），输入密码后回车进入软件源页面&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 177; flex-basis: 426px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/3.png&#34; data-size=&#34;1282x721&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/3.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/3_hu8f3fa1ec4f568e20e965b1945b6bcaeb_157651_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/3_hu8f3fa1ec4f568e20e965b1945b6bcaeb_157651_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/3.png&#34; data-size=&#34;1282x721&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/3.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/3_hu8f3fa1ec4f568e20e965b1945b6bcaeb_157651_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/3_hu8f3fa1ec4f568e20e965b1945b6bcaeb_157651_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1282&#34;
 				height=&#34;721&#34;
 				loading=&#34;lazy&#34;
@@ -955,8 +844,8 @@ git commit -m &amp;quot;&amp;quot;
 &lt;li&gt;
 &lt;p&gt;点击键入 i 进入编辑模式（此时窗口左下角会显示INSERT或插入），注释掉官方源&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 178; flex-basis: 428px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/4.png&#34; data-size=&#34;1281x718&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/4.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/4_hu6769ec30eff49a38c592225bdcb0b62f_155831_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/4_hu6769ec30eff49a38c592225bdcb0b62f_155831_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/4.png&#34; data-size=&#34;1281x718&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/4.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/4_hu6769ec30eff49a38c592225bdcb0b62f_155831_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/4_hu6769ec30eff49a38c592225bdcb0b62f_155831_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1281&#34;
 				height=&#34;718&#34;
 				loading=&#34;lazy&#34;
@@ -977,8 +866,8 @@ deb http://mirrors.aliyun.com/kali-security kali-rolling/updates main contrib no
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cmd&#34; data-lang=&#34;cmd&#34;&gt;deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib  
 deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;figure style=&#34;flex-grow: 177; flex-basis: 425px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/5.png&#34; data-size=&#34;1282x723&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/5.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/5_hu1d7ca140cd6ecc6b49b344cb5c897882_173921_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/5_hu1d7ca140cd6ecc6b49b344cb5c897882_173921_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/5.png&#34; data-size=&#34;1282x723&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/5.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/5_hu1d7ca140cd6ecc6b49b344cb5c897882_173921_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/5_hu1d7ca140cd6ecc6b49b344cb5c897882_173921_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1282&#34;
 				height=&#34;723&#34;
 				loading=&#34;lazy&#34;
@@ -992,8 +881,8 @@ deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 &lt;li&gt;
 &lt;p&gt;按Esc退出编辑模式，然后输入:wq（保存并退出），回车&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 178; flex-basis: 427px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/6.png&#34; data-size=&#34;1282x720&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/6.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/6_huf5e136c728a7a9375a9d988906e3fb9b_171372_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/6_huf5e136c728a7a9375a9d988906e3fb9b_171372_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/6.png&#34; data-size=&#34;1282x720&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/6.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/6_huf5e136c728a7a9375a9d988906e3fb9b_171372_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/6_huf5e136c728a7a9375a9d988906e3fb9b_171372_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1282&#34;
 				height=&#34;720&#34;
 				loading=&#34;lazy&#34;
@@ -1011,8 +900,8 @@ deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 &lt;li&gt;
 &lt;p&gt;输入sudo apt-get dist-upgrade进行软件源清单更新，输入密码后回车&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 176; flex-basis: 424px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/7.png&#34; data-size=&#34;1281x724&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/7.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/7_hub8a3806072995ba76d006e6d2fb7f2ad_175726_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/7_hub8a3806072995ba76d006e6d2fb7f2ad_175726_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/7.png&#34; data-size=&#34;1281x724&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/7.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/7_hub8a3806072995ba76d006e6d2fb7f2ad_175726_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/7_hub8a3806072995ba76d006e6d2fb7f2ad_175726_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1281&#34;
 				height=&#34;724&#34;
 				loading=&#34;lazy&#34;
@@ -1026,8 +915,8 @@ deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 &lt;li&gt;
 &lt;p&gt;输入sudo apt-get update，进行软件版本更新&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 177; flex-basis: 426px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/8.png&#34; data-size=&#34;1283x722&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/8.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/8_hu1515410d80e2c11afbd2cfb4dd3f6e74_212886_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/8_hu1515410d80e2c11afbd2cfb4dd3f6e74_212886_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/8.png&#34; data-size=&#34;1283x722&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/8.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/8_hu1515410d80e2c11afbd2cfb4dd3f6e74_212886_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/8_hu1515410d80e2c11afbd2cfb4dd3f6e74_212886_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1283&#34;
 				height=&#34;722&#34;
 				loading=&#34;lazy&#34;
@@ -1041,8 +930,8 @@ deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 &lt;li&gt;
 &lt;p&gt;更新完成后再输入sudo apt-get upgrade进行更新&lt;/p&gt;
 &lt;p&gt;&lt;figure style=&#34;flex-grow: 177; flex-basis: 427px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/9.png&#34; data-size=&#34;1281x720&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/9.png&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/9_hudfbf21a8b846666b2ae48a909d2de236_297552_480x0_resize_box_2.png 480w, https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/9_hudfbf21a8b846666b2ae48a909d2de236_297552_1024x0_resize_box_2.png 1024w&#34;
+		&lt;a href=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/9.png&#34; data-size=&#34;1281x720&#34;&gt;&lt;img src=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/9.png&#34;
+				srcset=&#34;https://example.com/p/linux%E6%8D%A2%E6%BA%90/9_hudfbf21a8b846666b2ae48a909d2de236_297552_480x0_resize_box_2.png 480w, https://example.com/p/linux%E6%8D%A2%E6%BA%90/9_hudfbf21a8b846666b2ae48a909d2de236_297552_1024x0_resize_box_2.png 1024w&#34;
 				width=&#34;1281&#34;
 				height=&#34;720&#34;
 				loading=&#34;lazy&#34;
@@ -1055,16 +944,16 @@ deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
 &lt;p&gt;此时输入y回车即可&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;第一次更新时间比较长，耐心等待更新完成，就可以开始kali的渗透之旅了&lt;/p&gt;
+&lt;p&gt;第一次更新时间比较长，耐心等待更新完成，就可以了&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Hugo</title>
-        <link>https://cjj-ck.github.io/p/hugo/</link>
+        <link>https://example.com/p/hugo/</link>
         <pubDate>Sat, 24 Apr 2021 21:05:28 +0800</pubDate>
         
-        <guid>https://cjj-ck.github.io/p/hugo/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/hugo/hugo.jpg" alt="Featured image of post Hugo" /&gt;&lt;h2 id=&#34;环境部署&#34;&gt;环境部署&lt;/h2&gt;
+        <guid>https://example.com/p/hugo/</guid>
+        <description>&lt;img src="https://example.com/p/hugo/hugo.jpg" alt="Featured image of post Hugo" /&gt;&lt;h2 id=&#34;环境部署&#34;&gt;环境部署&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;安装git&lt;/p&gt;
@@ -1175,398 +1064,6 @@ git push -u blog master
 &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-        <item>
-        <title>Chinese Test</title>
-        <link>https://cjj-ck.github.io/p/test-chinese/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://cjj-ck.github.io/p/test-chinese/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg" alt="Featured image of post Chinese Test" /&gt;&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
-&lt;p&gt;而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。&lt;/p&gt;
-&lt;p&gt;奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。&lt;/p&gt;
-&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;思念是最暖的忧伤像一双翅膀&lt;br&gt;
-让我停不了飞不远在过往游荡&lt;br&gt;
-不告而别的你 就算为了我着想&lt;br&gt;
-这么沉痛的呵护 我怎么能翱翔&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=3aypp_YlBzI&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;最暖的憂傷 - 田馥甄&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;图片&#34;&gt;图片&lt;/h2&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 66; flex-basis: 160px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_480x0_resize_q75_box.jpg 480w, https://cjj-ck.github.io/p/test-chinese/florian-klauer-nptLmg6jqDo-unsplash_hu595aaf3b3dbbb41af5aed8d3958cc9f9_13854_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;667&#34;
-				height=&#34;1000&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Florian Klauer on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Florian Klauer on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;  &lt;figure style=&#34;flex-grow: 149; flex-basis: 359px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34; data-size=&#34;1000x667&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash.jpg&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_480x0_resize_q75_box.jpg 480w, https://cjj-ck.github.io/p/test-chinese/luca-bravo-alS7ewQ41M8-unsplash_hu0a3f1163de68d0b9471979ebf0ecf11e_32400_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;1000&#34;
-				height=&#34;667&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Luca Bravo on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Luca Bravo on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;&lt;figure style=&#34;flex-grow: 133; flex-basis: 320px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34; data-size=&#34;1000x750&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash.jpg&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_480x0_resize_q75_box.jpg 480w, https://cjj-ck.github.io/p/test-chinese/helena-hertz-wWZzXlDpMog-unsplash_hu45a5e3ad5e058da6a00650ed8fd40bea_15530_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;1000&#34;
-				height=&#34;750&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Helena Hertz on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Helena Hertz on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;  &lt;figure style=&#34;flex-grow: 66; flex-basis: 160px&#34;&gt;
-		&lt;a href=&#34;https://cjj-ck.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34; data-size=&#34;667x1000&#34;&gt;&lt;img src=&#34;https://cjj-ck.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&#34;
-				srcset=&#34;https://cjj-ck.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_480x0_resize_q75_box.jpg 480w, https://cjj-ck.github.io/p/test-chinese/hudai-gayiran-3Od_VKcDEAA-unsplash_hub241c2a9c7a2caf7e16a2a5bbc7141ff_18711_1024x0_resize_q75_box.jpg 1024w&#34;
-				width=&#34;667&#34;
-				height=&#34;1000&#34;
-				loading=&#34;lazy&#34;
-				alt=&#34;Photo by Hudai Gayiran on Unsplash&#34;&gt;
-		&lt;/a&gt;
-		
-		&lt;figcaption&gt;Photo by Hudai Gayiran on Unsplash&lt;/figcaption&gt;
-		
-	&lt;/figure&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Photo by Florian Klauer on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;florian-klauer-nptLmg6jqDo-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Luca Bravo on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;luca-bravo-alS7ewQ41M8-unsplash.jpg&lt;/span&gt;) 
-
-![&lt;span class=&#34;nt&#34;&gt;Photo by Helena Hertz on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;helena-hertz-wWZzXlDpMog-unsplash.jpg&lt;/span&gt;)  ![&lt;span class=&#34;nt&#34;&gt;Photo by Hudai Gayiran on Unsplash&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;hudai-gayiran-3Od_VKcDEAA-unsplash.jpg&lt;/span&gt;)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;相册语法来自 &lt;a class=&#34;link&#34; href=&#34;https://typlog.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Typlog&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Markdown Syntax Guide</title>
-        <link>https://cjj-ck.github.io/p/markdown-syntax-guide/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://cjj-ck.github.io/p/markdown-syntax-guide/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
-&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
-&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
-&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
-&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
-&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
-&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
-&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
-&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
-&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
-&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
-&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
-&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
-&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
-&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution&lt;/h4&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;!-- raw HTML omitted --&gt;
-— &lt;!-- raw HTML omitted --&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
-&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Name&lt;/th&gt;
-&lt;th&gt;Age&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Bob&lt;/td&gt;
-&lt;td&gt;27&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Alice&lt;/td&gt;
-&lt;td&gt;23&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables&lt;/h4&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Italics&lt;/th&gt;
-&lt;th&gt;Bold&lt;/th&gt;
-&lt;th&gt;Code&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h2&gt;
-&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
-&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
-&amp;lt;head&amp;gt;
-  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
-&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
-&lt;ol&gt;
-&lt;li&gt;First item&lt;/li&gt;
-&lt;li&gt;Second item&lt;/li&gt;
-&lt;li&gt;Third item&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;List item&lt;/li&gt;
-&lt;li&gt;Another item&lt;/li&gt;
-&lt;li&gt;And another item&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Fruit
-&lt;ul&gt;
-&lt;li&gt;Apple&lt;/li&gt;
-&lt;li&gt;Orange&lt;/li&gt;
-&lt;li&gt;Banana&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Dairy
-&lt;ul&gt;
-&lt;li&gt;Milk&lt;/li&gt;
-&lt;li&gt;Cheese&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;GIF&lt;!-- raw HTML omitted --&gt; is a bitmap image format.&lt;/p&gt;
-&lt;p&gt;H&lt;!-- raw HTML omitted --&gt;2&lt;!-- raw HTML omitted --&gt;O&lt;/p&gt;
-&lt;p&gt;X&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; + Y&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt; = Z&lt;!-- raw HTML omitted --&gt;n&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;Press &lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;CTRL&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;ALT&lt;!-- raw HTML omitted --&gt;+&lt;!-- raw HTML omitted --&gt;Delete&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt; to end the session.&lt;/p&gt;
-&lt;p&gt;Most &lt;!-- raw HTML omitted --&gt;salamanders&lt;!-- raw HTML omitted --&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
-&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/section&gt;</description>
-        </item>
-        <item>
-        <title>Rich Content</title>
-        <link>https://cjj-ck.github.io/p/rich-content/</link>
-        <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://cjj-ck.github.io/p/rich-content/</guid>
-        <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;youtube-privacy-enhanced-shortcode&#34;&gt;YouTube Privacy Enhanced Shortcode&lt;/h2&gt;
-&lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe loading=&#34;lazy&#34; 
-            src=&#34;https://www.youtube.com/embed/ZJthWmvUzzc&#34; 
-            allowfullscreen 
-            title=&#34;YouTube Video&#34;
-    &gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;twitter-simple-shortcode&#34;&gt;Twitter Simple Shortcode&lt;/h2&gt;
-
-
-
-
-&lt;style type=&#34;text/css&#34;&gt;
-  .twitter-tweet {
-  font: 14px/1.45 -apple-system,BlinkMacSystemFont,&#34;Segoe UI&#34;,Roboto,Oxygen-Sans,Ubuntu,Cantarell,&#34;Helvetica Neue&#34;,sans-serif;
-  border-left: 4px solid #2b7bb9;
-  padding-left: 1.5em;
-  color: #555;
-}
-  .twitter-tweet a {
-  color: #2b7bb9;
-  text-decoration: none;
-}
-  blockquote.twitter-tweet a:hover,
-  blockquote.twitter-tweet a:focus {
-  text-decoration: underline;
-}
-&lt;/style&gt;
-
-&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br&gt;— Jan Tschichold &lt;a href=&#34;https://t.co/gcv7SrhvJb&#34;&gt;pic.twitter.com/gcv7SrhvJb&lt;/a&gt;&lt;/p&gt;&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href=&#34;https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw&#34;&gt;January 17, 2019&lt;/a&gt;&lt;/blockquote&gt;
-
-&lt;!-- raw HTML omitted --&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;vimeo-simple-shortcode&#34;&gt;Vimeo Simple Shortcode&lt;/h2&gt;
-
-
-
-
-
-
-&lt;style&gt;
-.__h_video {
-   position: relative;
-   padding-bottom: 56.23%;
-   height: 0;
-   overflow: hidden;
-   width: 100%;
-   background: #000;
-}
-.__h_video img {
-   width: 100%;
-   height: auto;
-   color: #000;
-}
-.__h_video .play {
-   height: 72px;
-   width: 72px;
-   left: 50%;
-   top: 50%;
-   margin-left: -36px;
-   margin-top: -36px;
-   position: absolute;
-   cursor: pointer;
-}
-&lt;/style&gt;
-
-
-&lt;div class=&#34;s_video_simple __h_video&#34;&gt;
-&lt;a href=&#34;https://vimeo.com/4.8912912e&amp;#43;07&#34; rel=&#34;noopener&#34; target=&#34;_blank&#34;&gt;
-
-
-&lt;img src=&#34;https://i.vimeocdn.com/video/337401969_640.jpg&#34; srcset=&#34;https://i.vimeocdn.com/video/337401969_640.jpg 1x, https://i.vimeocdn.com/video/337401969.jpg 2x&#34; alt=&#34;Sing Jan Swing - Kinetic Type&#34;&gt;
-&lt;div class=&#34;play&#34;&gt;&lt;svg version=&#34;1&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; viewBox=&#34;0 0 61 61&#34;&gt;&lt;circle cx=&#34;30.5&#34; cy=&#34;30.5&#34; r=&#34;30.5&#34; opacity=&#34;.8&#34; fill=&#34;#000&#34;&gt;&lt;/circle&gt;&lt;path d=&#34;M25.3 19.2c-2.1-1.2-3.8-.2-3.8 2.2v18.1c0 2.4 1.7 3.4 3.8 2.2l16.6-9.1c2.1-1.2 2.1-3.2 0-4.4l-16.6-9z&#34; fill=&#34;#fff&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>Placeholder Text</title>
-        <link>https://cjj-ck.github.io/p/placeholder-text/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://cjj-ck.github.io/p/placeholder-text/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/placeholder-text/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post Placeholder Text" /&gt;&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-&lt;p&gt;Redit teque digerit hominumque toris verebor lumina non cervice subde tollit usus habet Arctonque, furores quas nec ferunt. Quoque montibus nunc caluere tempus inhospita parcite confusaque translucet patri vestro qui optatis lumine cognoscere flos nubis! Fronde ipsamque patulos Dryopen deorum.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Exierant elisi ambit vivere dedere&lt;/li&gt;
-&lt;li&gt;Duce pollice&lt;/li&gt;
-&lt;li&gt;Eris modo&lt;/li&gt;
-&lt;li&gt;Spargitque ferrea quos palude&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Rursus nulli murmur; hastile inridet ut ab gravi sententia! Nomine potitus silentia flumen, sustinet placuit petis in dilapsa erat sunt. Atria tractus malis.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Comas hunc haec pietate fetum procerum dixit&lt;/li&gt;
-&lt;li&gt;Post torum vates letum Tiresia&lt;/li&gt;
-&lt;li&gt;Flumen querellas&lt;/li&gt;
-&lt;li&gt;Arcanaque montibus omnes&lt;/li&gt;
-&lt;li&gt;Quidem et&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id=&#34;vagus-elidunt&#34;&gt;Vagus elidunt&lt;/h1&gt;
-&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Canons_of_page_construction#Van_de_Graaf_canon&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;The Van de Graaf Canon&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;mane-refeci-capiebant-unda-mulcebat&#34;&gt;Mane refeci capiebant unda mulcebat&lt;/h2&gt;
-&lt;p&gt;Victa caducifer, malo vulnere contra dicere aurato, ludit regale, voca! Retorsit colit est profanae esse virescere furit nec; iaculi matertera et visa est, viribus. Divesque creatis, tecta novat collumque vulnus est, parvas. &lt;strong&gt;Faces illo pepulere&lt;/strong&gt; tempus adest. Tendit flamma, ab opes virum sustinet, sidus sequendo urbis.&lt;/p&gt;
-&lt;p&gt;Iubar proles corpore raptos vero auctor imperium; sed et huic: manus caeli Lelegas tu lux. Verbis obstitit intus oblectamina fixis linguisque ausus sperare Echionides cornuaque tenent clausit possit. Omnia putatur. Praeteritae refert ausus; ferebant e primus lora nutat, vici quae mea ipse. Et iter nil spectatae vulnus haerentia iuste et exercebat, sui et.&lt;/p&gt;
-&lt;p&gt;Eurytus Hector, materna ipsumque ut Politen, nec, nate, ignari, vernum cohaesit sequitur. Vel &lt;strong&gt;mitis temploque&lt;/strong&gt; vocatus, inque alis, &lt;em&gt;oculos nomen&lt;/em&gt; non silvis corpore coniunx ne displicet illa. Crescunt non unus, vidit visa quantum inmiti flumina mortis facto sic: undique a alios vincula sunt iactata abdita! Suspenderat ego fuit tendit: luna, ante urbem Propoetides &lt;strong&gt;parte&lt;/strong&gt;.&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Math Typesetting</title>
-        <link>https://cjj-ck.github.io/p/math-typesetting/</link>
-        <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://cjj-ck.github.io/p/math-typesetting/</guid>
-        <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
-&lt;p&gt;In this example we will be using &lt;a class=&#34;link&#34; href=&#34;https://katex.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;KaTeX&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Create a partial under &lt;code&gt;/layouts/partials/math.html&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Within this partial reference the &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/autorender.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Auto-render Extension&lt;/a&gt; or host these scripts locally.&lt;/li&gt;
-&lt;li&gt;Include the partial in your templates like so:&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; or .Params.math .Site.Params.math &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; partial &lt;span class=&#34;s2&#34;&gt;&amp;#34;math.html&amp;#34;&lt;/span&gt; . &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;span class=&#34;o&#34;&gt;{{&lt;/span&gt; end &lt;span class=&#34;o&#34;&gt;}}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
-&lt;li&gt;To enable KaTex globally set the parameter &lt;code&gt;math&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in a project&amp;rsquo;s configuration&lt;/li&gt;
-&lt;li&gt;To enable KaTex on a per page basis include the parameter &lt;code&gt;math: true&lt;/code&gt; in content files&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Use the online reference of &lt;a class=&#34;link&#34; href=&#34;https://katex.org/docs/supported.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Supported TeX Functions&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;examples&#34;&gt;Examples&lt;/h3&gt;
-
-&lt;p&gt;Block math:
-$$
-\varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
-$$&lt;/p&gt;</description>
-        </item>
-        <item>
-        <title>Emoji Support</title>
-        <link>https://cjj-ck.github.io/p/emoji-support/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://cjj-ck.github.io/p/emoji-support/</guid>
-        <description>&lt;img src="https://cjj-ck.github.io/p/emoji-support/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post Emoji Support" /&gt;&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/functions/emojify/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;emojify&lt;/code&gt;&lt;/a&gt; function can be called directly in templates or &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/templates/shortcode-templates/#inline-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Inline Shortcodes&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;To enable emoji globally, set &lt;code&gt;enableEmoji&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; in your site&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/getting-started/configuration/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;configuration&lt;/a&gt; and then you can type emoji shorthand codes directly in content files; e.g.&lt;/p&gt;
-&lt;!-- raw HTML omitted --&gt;
-&lt;p&gt;The &lt;a class=&#34;link&#34; href=&#34;http://www.emoji-cheat-sheet.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Emoji cheat sheet&lt;/a&gt; is a useful reference for emoji shorthand codes.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;N.B.&lt;/strong&gt; The above steps enable Unicode Standard emoji characters and sequences in Hugo, however the rendering of these glyphs depends on the browser and the platform. To style the emoji you can either use a third party emoji font or a font stack; e.g.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;.emoji {
-  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         
     </channel>

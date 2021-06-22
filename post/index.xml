@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on 萧尘博客</title>
-    <link>https://cjj-ck.github.io/post/</link>
-    <description>Recent content in Posts on 萧尘博客</description>
+    <title>Posts on cjj-blog</title>
+    <link>https://example.com/post/</link>
+    <description>Recent content in Posts on cjj-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 May 2021 17:55:26 +0800</lastBuildDate><atom:link href="https://cjj-ck.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 May 2021 17:43:02 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python虚拟环境</title>
+      <link>https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</link>
+      <pubDate>Sun, 16 May 2021 17:43:02 +0800</pubDate>
+      
+      <guid>https://example.com/p/python%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83/</guid>
+      <description>python虚拟环境 1. 什么是虚拟环境 ​	python虚拟环境是独立于已经安装的python环境的环境，各个环境之间互不影响。比如我正在学习python爬虫，我可以创建一个名为spider的虚拟环境专门放置与爬虫有关的包，过段时间我学习Django，可以创建一个名为dj的环境安装Django。
+​	不仅仅是方便管理，虚拟环境还能减少环境冲突和包之间的冲突以及其他不必要的麻烦，比如以下场景：
+  项目A使用的是Django1.9，而项目B需要Django2.1
+  项目A使用python2.7，项目B使用python3.8
+  2. 虚拟环境管理包（virtualenvwrapper） 2.1 下载管理包 打开命令行，用pip安装virtualenvwrapper
+  Windows下：
+pip install virtualenvwrapper-win   linux下：
+pip install virtuallenvwrapper   2.2 常用操作   创建虚拟环境（创建后会自动进入创建的虚拟环境）
+mkvirtualenv &amp;lt;name&amp;gt; 为虚拟环境的名称
+  退出虚拟环境
+deactivate   进入虚拟环境
+workon &amp;lt;name&amp;gt; 进入虚拟环境后用pip安装python包只会安装在该虚拟环境下
+  删除虚拟环境
+rmvirtualenv &amp;lt;name&amp;gt;   3. 第三房包管理工具（anaconda） 3.1 下载anaconda 下载地址：https://www.anaconda.com/download/
+3.2 常用操作   环境操作
+  创建虚拟环境</description>
+    </item>
+    
     <item>
       <title>Java开发环境配置</title>
-      <link>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://example.com/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 09 May 2021 17:55:26 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://example.com/p/java%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>安装JDK   下载jdk安装包
 进入jdk官方下载页面，选择合适的版本进行下载
 
@@ -43,10 +67,10 @@
     
     <item>
       <title>Python开发环境配置</title>
-      <link>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 09 May 2021 17:55:19 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://example.com/p/python%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>Windows下的安装   进入python官方下载页面下载合适版本的Python
 
   双击运行，勾选Add Python 3.6 to PATH，并选择第二项自定义安装Python
@@ -70,10 +94,10 @@ sudo apt-get install python3-pip   离线包解压安装  下载Linux版python�
     
     <item>
       <title>C语言开发环境配置</title>
-      <link>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+      <link>https://example.com/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
       <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
+      <guid>https://example.com/p/c%E8%AF%AD%E8%A8%80%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</guid>
       <description>Windows10下的部署   下载C/C++编译器MinGW64压缩包，解压到合适的位置
 下载地址：https://wwe.lanzous.com/iCIlQdq2r1e
 
@@ -97,11 +121,28 @@ gcc -v g++ -v gdb -v   </description>
     </item>
     
     <item>
+      <title>linux安装软件</title>
+      <link>https://example.com/p/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sun, 09 May 2021 17:55:05 +0800</pubDate>
+      
+      <guid>https://example.com/p/linux%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</guid>
+      <description>1. apt安装 需要知道需要安装的软件在apt源中的包名
+命令
+sudo apt-get install &amp;lt;软件名&amp;gt; 卸载
+sudo apt-get remove &amp;lt;软件名&amp;gt; 2. deb包安装 deb包是基于Debian linux的发行版的软件安装包，其中，Ubuntu、kali都是基于Debian的linux发行版
+2.1 下载要安装的deb包 以VScode为例，桌面上是一个已经下载好的vscodedeb安装包
+2.3 命令行安装 在deb包所在位置打开终端，执行安装命令
+sudo dpkg -i &amp;lt;包名&amp;gt;2.4 添加快捷方式 安装好之后，不会像Windows一样自动创建桌面快捷方式，需要手动创建
+首先找到安装好的VScode，点开左上角的kali图标，搜索
+拖动到桌面就可以，此时deb安装包可以删除了</description>
+    </item>
+    
+    <item>
       <title>VMware Tools的安装</title>
-      <link>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
+      <link>https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</link>
       <pubDate>Sun, 09 May 2021 17:39:00 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://example.com/p/vmware-tools%E7%9A%84%E5%AE%89%E8%A3%85/</guid>
       <description>VMware Tools的安装 VMware Tools是VMware虚拟机的增强功能，在VMware的虚拟机内安装VMware tools能够大大提升我们操作虚拟机的体验
   显著提升虚拟机的性能
 主要为图形显示性能，例如鼠标卡顿
@@ -130,10 +171,10 @@ tar -xzvf [.tar.gz压缩包文件名]</description>
     
     <item>
       <title>git操作</title>
-      <link>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</link>
+      <link>https://example.com/p/git%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Mon, 26 Apr 2021 21:28:38 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/git%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://example.com/p/git%E6%93%8D%E4%BD%9C/</guid>
       <description>git环境部署   本地安装git
 去git官网下载git软件，安装过程无脑下一步就行
 安装成功后在鼠标右击目录下会多出两项
@@ -157,10 +198,10 @@ git clone [url]     使用码云
     
     <item>
       <title>桥接模式</title>
-      <link>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
+      <link>https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</link>
       <pubDate>Sun, 25 Apr 2021 22:58:38 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
+      <guid>https://example.com/p/%E6%A1%A5%E6%8E%A5%E6%A8%A1%E5%BC%8F/</guid>
       <description>虚拟机桥接模式 桥接模式就是将主机网卡与虚拟机的网卡利用虚拟网桥进行通信。
 在桥接的作用下，类似于把物理主机虚拟为一个交换机，所有桥接设置的虚拟机连接到这个交换机的一个接口上，物理主机也同样插在这个交换机当中，所以所有桥接下的网卡与网卡都是交换模式的，相互可以访问而不干扰。
 在桥接模式下，虚拟机ip地址需要与主机在同一个网段，如果需要联网，则网关与DNS需要与主机网卡一致
@@ -185,10 +226,10 @@ git clone [url]     使用码云
     
     <item>
       <title>linux换源</title>
-      <link>https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/</link>
+      <link>https://example.com/p/linux%E6%8D%A2%E6%BA%90/</link>
       <pubDate>Sat, 24 Apr 2021 22:38:06 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/linux%E6%8D%A2%E6%BA%90/</guid>
+      <guid>https://example.com/p/linux%E6%8D%A2%E6%BA%90/</guid>
       <description>换源   打开kali的终端
 1
   编辑软件源，输入
@@ -206,10 +247,10 @@ deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib deb-src h
     
     <item>
       <title>Hugo</title>
-      <link>https://cjj-ck.github.io/p/hugo/</link>
+      <link>https://example.com/p/hugo/</link>
       <pubDate>Sat, 24 Apr 2021 21:05:28 +0800</pubDate>
       
-      <guid>https://cjj-ck.github.io/p/hugo/</guid>
+      <guid>https://example.com/p/hugo/</guid>
       <description>环境部署   安装git
 sudo apt-get install git   安装hugo
 sudo apt-get install hugo   项目搭建   创建hugo 项目
@@ -220,69 +261,6 @@ cd myblog git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c 注�
 hugo new post/blog.md 注：
  在post目录下新建一个名为blog.md的博客文件 .md为Markdown格式的文件    修改配置文件
 baseURL = &amp;quot;https://tian_828.gitee.io/&amp;quot;languageCode = &amp;quot;zh-cn&amp;quot;title = &amp;quot;靖哥的博客&amp;quot;theme = &amp;quot;m10c&amp;quot;注：</description>
-    </item>
-    
-    <item>
-      <title>Chinese Test</title>
-      <link>https://cjj-ck.github.io/p/test-chinese/</link>
-      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjj-ck.github.io/p/test-chinese/</guid>
-      <description>正文测试 而这些并不是完全重要，更加重要的问题是， 带着这些问题，我们来审视一下学生会退会。 既然如何， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 我们不得不面对一个非常尴尬的事实，那就是， 可是，即使是这样，学生会退会的出现仍然代表了一定的意义。 学生会退会，发生了会如何，不发生又会如何。 经过上述讨论， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 学生会退会，到底应该如何实现。 这样看来， 在这种困难的抉择下，本人思来想去，寝食难安。 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 就我个人来说，学生会退会对我的意义，不能不说非常重大。 莎士比亚曾经提到过，人的一生是短的，但如果卑劣地过这一生，就太长了。这似乎解答了我的疑惑。 莫扎特说过一句富有哲理的话，谁和我一样用功，谁就会和我一样成功。这启发了我， 对我个人而言，学生会退会不仅仅是一个重大的事件，还可能会改变我的人生。 学生会退会，到底应该如何实现。 一般来说， 从这个角度来看， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 在这种困难的抉择下，本人思来想去，寝食难安。 了解清楚学生会退会到底是一种怎么样的存在，是解决一切问题的关键。 一般来说， 生活中，若学生会退会出现了，我们就不得不考虑它出现了的事实。 问题的关键究竟为何？ 而这些并不是完全重要，更加重要的问题是。
-奥斯特洛夫斯基曾经说过，共同的事业，共同的斗争，可以使人们产生忍受一切的力量。　带着这句话，我们还要更加慎重的审视这个问题： 一般来讲，我们都必须务必慎重的考虑考虑。 既然如此， 这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。 带着这些问题，我们来审视一下学生会退会。 我认为， 我认为， 在这种困难的抉择下，本人思来想去，寝食难安。 问题的关键究竟为何？ 每个人都不得不面对这些问题。 在面对这种问题时， 要想清楚，学生会退会，到底是一种怎么样的存在。 我认为， 既然如此， 每个人都不得不面对这些问题。 在面对这种问题时， 那么， 我认为， 学生会退会因何而发生。
-引用  思念是最暖的忧伤像一双翅膀
-让我停不了飞不远在过往游荡
-不告而别的你 就算为了我着想
-这么沉痛的呵护 我怎么能翱翔
-最暖的憂傷 - 田馥甄
- 图片 Photo by Florian Klauer on Unsplash Photo by Luca Bravo on Unsplash</description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://cjj-ck.github.io/p/markdown-syntax-guide/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjj-ck.github.io/p/markdown-syntax-guide/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://cjj-ck.github.io/p/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjj-ck.github.io/p/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://cjj-ck.github.io/p/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjj-ck.github.io/p/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://cjj-ck.github.io/p/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjj-ck.github.io/p/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Emoji Support</title>
-      <link>https://cjj-ck.github.io/p/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cjj-ck.github.io/p/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
     </item>
     
   </channel>
